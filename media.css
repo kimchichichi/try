@@ -1,0 +1,318 @@
+@media only screen and (min-width: 1200px) {
+	/* header */
+	
+}
+/* End  Media Query For Desktop */
+
+	/* Media Query For Medium Tablets */
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		#header .brand h1 {
+			display: none;
+		}
+		#header .brand .logo {
+			display: block;
+			color: yellow;
+			font-weight: bold;
+			font-size: 50px;
+			padding-left: 20px;
+	
+		}		
+	.name {
+			color: yellow;
+		}
+		.container {
+			flex-direction: column;
+		}
+
+		#about .about-bottom {
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 50px;
+		}
+		#about .swiper {
+			width: 900px;
+		}
+		#projekte .projekte,
+		#discographie .projekte {
+			max-width: 1199px;
+			margin: 0 auto;
+		}	
+		#projekte .projectbox,
+		#discographie .projectbox {
+			grid-template-columns: repeat(2,1fr);
+		}
+		#projekte .box {
+		width: 500px;
+		height: 500px;
+		}  
+		.projectbox {
+			flex-direction: column;
+			max-width: 1199px;
+		}
+		
+		.projectbox img {
+			width: 900px;
+		}
+		.youtube {
+			width:900px;
+			height: auto;
+		}
+		.spotify {
+			width: 900px;
+		}
+		#news .news{
+			flex-direction: row;
+		}
+		#news .news-column {
+			width: calc(50% - 20px);
+		}
+
+
+		.news-projectbox {
+			width: 1000px;
+		}
+		#media {
+			max-width: 1199px;
+			height: auto;
+			margin: 0 auto;
+			padding: 50px 20px;
+		}
+		
+		.swiper {
+			width: 900px;
+			height: 700px;
+		}
+		#kontakt .projectbox {
+			flex-direction: row;
+			max-width: 1199px;
+		}
+		#kontakt img {
+			width: 500px;
+		}
+		#kontakt .contact-name {
+			font-size: 100px;
+		}
+	}
+
+	/* Media Query For Small Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.name {
+		color: orange;
+	}
+	.container {
+		flex-direction: column;
+	}
+	#header .header {
+		height: auto;
+		padding: 0;
+
+	}
+	#header .brand h1 {
+		display: none;
+	}
+	#header .brand .logo {
+		display: block;
+		color: orange;
+		font-weight: bold;
+		font-size: 50px;
+		padding-left: 20px;
+
+	}
+	#header .nav-list.vertical,
+    #header .nav-list.horizontal {
+		display: none;
+    }
+	#header .nav-list.vertical,
+	#header .nav-list.horizontal {
+		display: none;
+	}
+
+	
+	#about .about-bottom {
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+	#about .swiper {
+		width: 700px;
+	}
+	#projekte .projekte,
+	#discographie .projekte {
+		max-width: 991px;
+		margin: 0 auto;
+		border: 2px solid black;
+	}
+	#projekte .projectbox,
+	#discographie .projectbox {
+		grid-template-columns: repeat(1,1fr);
+	}
+	#solo .solo-top {
+		text-align: center;
+	} 
+	#triofussissimo .section-title {
+		font-size: 70px;
+	}
+	.projectbox {
+		flex-direction: column;
+		max-width: 991px;
+		border: 5px solid orange;
+	}
+	.projectbox img {
+		width: 700px;
+	}
+	.youtube {
+		width:700px;
+		height: auto;
+	}
+	.spotify {
+		width: 700px;
+	}
+	#news .news{
+		flex-direction: row;
+	}
+	#news .news-column {
+		width: calc(50% - 20px);
+	}
+	.news-projectbox {
+		width: 700px;
+	}
+	#media .section-title {
+		padding-top: 50px;
+	}
+	.swiper {
+		width: 700px;
+		height: 700px;
+	}
+  }
+  
+
+  /* Media Query For Phones */
+  @media only screen and (max-width: 767px) {
+
+	#home .home {
+		padding-top: 400px;
+	}
+
+	.name {
+		font-size: 120px;
+		padding-left: 20px;
+	}
+	.instrument {
+		font-size: 40px;
+	}
+	.section-title {
+		padding-top: 150px;
+		padding-left: 50px;
+		font-size: 90px;
+	}
+	.info {
+		padding-left: 70px;
+	}
+	.container {
+		flex-direction: column;
+	}
+	#header .brand h1 {
+		display: none;
+	}
+	#header .logo {
+		display: block;
+		color: red;
+		font-weight: bold;
+		font-size: 50px;
+		/*padding-left: 20px;*/
+		position: fixed;
+		top: 0;
+	}
+
+	#header .logo:hover {
+		color: black;
+	}
+
+/* Add these styles for the "active" class */
+#header .nav-list .vertical.active {
+    display: flex;
+}
+
+#header .nav-list .horizontal.active {
+    display: block;
+}
+
+/* Additional styles for hiding lists by default */
+#header .nav-list .vertical,
+#header .nav-list .horizontal {
+    display: none;
+}
+
+	#about .about-bottom {
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+    
+	#about .swiper {
+		width: 500px;
+	}
+	#discographie .section-title {
+		padding-left: 20px;
+		font-size: 70px;
+	}
+	#projekte .projekte,
+	#discographie .projekte {
+		max-width: 767px;
+	}
+	
+	#projekte .projectbox,
+	#discographie .projectbox {
+		grid-template-columns: repeat(1,1fr);
+	}
+	#solo .solo-top {
+		text-align: center;
+	} 
+	#orchester .section-title {
+		font-size: 80px;
+	}
+	#unterricht .section-title,
+	#triofussissimo .section-title {
+		font-size: 70px;
+	}
+	.projectbox {
+		flex-direction: column;
+		max-width: 767px;
+	}
+	.projectbox img {
+		width: 500px;
+	}
+	.youtube {
+		width:500px;
+		height: auto;
+	}
+	.spotify {
+		width: 500px;
+	}
+	#news .news-column {
+		width: calc(80% - 20px);
+	}
+	#news .news{
+		justify-content: center;
+		align-items: center;
+	}
+	#vortrag-readmore .readmore-title,
+	#kinderkonzert-readmore .readmore-title  {
+		font-size: 50px;
+		padding-left: 5px;
+	}
+	.news-projectbox {
+		width: 500px;
+	}
+	
+	.swiper {
+		width: 500px;
+		height: 700px;
+	}
+	#kontakt img {
+		width: 500px;
+	}
+	#kontakt .contact-name {
+		font-size: 100px;
+	}
+}
