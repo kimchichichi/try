@@ -1,318 +1,242 @@
-@media only screen and (min-width: 1200px) {
-	/* header */
-	
-}
-/* End  Media Query For Desktop */
-
-	/* Media Query For Medium Tablets */
-	@media only screen and (min-width: 992px) and (max-width: 1199px) {
-		#header .brand h1 {
-			display: none;
-		}
-		#header .brand .logo {
-			display: block;
-			color: yellow;
-			font-weight: bold;
-			font-size: 50px;
-			padding-left: 20px;
-	
-		}		
-	.name {
-			color: yellow;
-		}
-		.container {
-			flex-direction: column;
-		}
-
-		#about .about-bottom {
-			margin-top: 0;
-			margin-right: 0;
-			margin-bottom: 50px;
-		}
-		#about .swiper {
-			width: 900px;
-		}
-		#projekte .projekte,
-		#discographie .projekte {
-			max-width: 1199px;
-			margin: 0 auto;
-		}	
-		#projekte .projectbox,
-		#discographie .projectbox {
-			grid-template-columns: repeat(2,1fr);
-		}
-		#projekte .box {
-		width: 500px;
-		height: 500px;
-		}  
-		.projectbox {
-			flex-direction: column;
-			max-width: 1199px;
-		}
-		
-		.projectbox img {
-			width: 900px;
-		}
-		.youtube {
-			width:900px;
-			height: auto;
-		}
-		.spotify {
-			width: 900px;
-		}
-		#news .news{
-			flex-direction: row;
-		}
-		#news .news-column {
-			width: calc(50% - 20px);
-		}
-
-
-		.news-projectbox {
-			width: 1000px;
-		}
-		#media {
-			max-width: 1199px;
-			height: auto;
-			margin: 0 auto;
-			padding: 50px 20px;
-		}
-		
-		.swiper {
-			width: 900px;
-			height: 700px;
-		}
-		#kontakt .projectbox {
-			flex-direction: row;
-			max-width: 1199px;
-		}
-		#kontakt img {
-			width: 500px;
-		}
-		#kontakt .contact-name {
-			font-size: 100px;
-		}
-	}
-
-	/* Media Query For Small Tablets */
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.name {
-		color: orange;
-	}
-	.container {
-		flex-direction: column;
-	}
-	#header .header {
-		height: auto;
-		padding: 0;
-
-	}
-	#header .brand h1 {
-		display: none;
-	}
-	#header .brand .logo {
-		display: block;
-		color: orange;
-		font-weight: bold;
-		font-size: 50px;
-		padding-left: 20px;
-
-	}
-	#header .nav-list.vertical,
-    #header .nav-list.horizontal {
-		display: none;
+@media screen and (max-width: 480px) {
+    #home h1 {
+        color: red;
+        font-size: 4rem;
     }
-	#header .nav-list.vertical,
-	#header .nav-list.horizontal {
-		display: none;
+    
+    #tour {
+        padding-top: 50px;
+    }
+    /* Project */
+	#projekte .projectbox,
+    #CD .projectbox {
+		grid-template-columns: repeat(1,1fr);
+        padding: 0;
+	}
+	#projekte .box,
+    #CD .box {
+        width: 380px;
+        height: 380px;
 	}
 
-	
-	#about .about-bottom {
-		margin-top: 0;
-		margin-right: 0;
-		margin-bottom: 50px;
-	}
-	#about .swiper {
-		width: 700px;
-	}
-	#projekte .projekte,
-	#discographie .projekte {
-		max-width: 991px;
-		margin: 0 auto;
-		border: 2px solid black;
-	}
-	#projekte .projectbox,
-	#discographie .projectbox {
-		grid-template-columns: repeat(1,1fr);
-	}
-	#solo .solo-top {
-		text-align: center;
-	} 
-	#triofussissimo .section-title {
-		font-size: 70px;
-	}
-	.projectbox {
+	.custom-section .bio {
+		display: flex;
 		flex-direction: column;
-		max-width: 991px;
-		border: 5px solid orange;
 	}
-	.projectbox img {
-		width: 700px;
+
+    .custom-section {
+        border: 2px solid red;
+        height: auto;
+    }
+    .custom-section .col-left {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .custom-section .col-left .bio-img {
+        border: 5px solid white;
+    }
+
+    .custom-section .col-left .bio-img::after {
+        left: -20px;
+        top: 10px;
+        height: 95%;
+        width: 95%;
+        border-width: 5px;
+    }
+    .custom-section .bio {
+		display: flex;
+		flex-direction: column;
 	}
-	.youtube {
-		width:700px;
-		height: auto;
+    .custom-section .col-right {
+        width: 100%;
+        height: auto;
+    }
+    .custom-section .cta {
+        font-size: 2rem;
+    }
+    .cd_ul {
+        margin: 0px;
+    }
+    .cd_ul p {
+        margin: 5px;
+    }
+	/* End Project */
+
+    /*  Unterricht */
+    
+    #unterricht .unterricht-bottom .unterricht-item {
+		flex-basis: 45%;
+		margin: 2.5%;
 	}
-	.spotify {
-		width: 700px;
+    #unterricht .unterricht-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    #unterricht .unterricht {
+        margin: 50px auto;
+    }
+
+    .unterrichtangebot .box {
+        width: 100%; 
+    }
+    .unterrichtangebot .section-title {
+        padding-top: 50px;
+    }
+    .unterrichtangebot .info {
+        flex-direction: column;
+    }
+    .unterrichtangebot img {
+        width: 150px;
+    }
+    .unterrichtangebot .box.left,
+    .unterrichtangebot .box.right {
+        width: 100%; 
+        margin: 10px;
+    }
+    
+    /* End Unterricht */
+    #download {
+    }
+
+}
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+
+    .cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
 	}
-	#news .news{
-		flex-direction: row;
+	h1.section-title {
+		font-size: 6rem;
 	}
-	#news .news-column {
-		width: calc(50% - 20px);
+
+	/* home */
+	#home h1 {
+		font-size: 7rem;
+        color:white;
 	}
-	.news-projectbox {
-		width: 700px;
-	}
-	#media .section-title {
+	/* End home */
+
+	/* unterricht Section */
+	
+    #musiksafari,
+    #ensemble {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bigdjango {
+        margin-top: 50px;
+        width: 700px;
+    }
+	/* End unterricht Section */
+
+	/* Project */
+	#projekte .section-title {
 		padding-top: 50px;
 	}
-	.swiper {
-		width: 700px;
-		height: 700px;
+	#projekte .projectbox {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
 	}
-  }
-  
+	#projekte .box {
+    width: 400px;
+    height: 400px;
+	}
+    .custom-section {
+        padding: 20px;
+    }
+   
+	/* End Project */
 
-  /* Media Query For Phones */
-  @media only screen and (max-width: 767px) {
 
-	#home .home {
-		padding-top: 400px;
+	/* CD */
+	#CD .projectbox {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+	#CD .box {
+		width: 400px;
+		height: 400px;
 	}
 
-	.name {
-		font-size: 120px;
-		padding-left: 20px;
+	/* End CD */
+	/* bio */
+	#bio .bio {
+		flex-direction: row;
 	}
-	.instrument {
-		font-size: 40px;
+	#bio .col-left {
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
 	}
-	.section-title {
-		padding-top: 150px;
-		padding-left: 50px;
-		font-size: 90px;
+	#bio .bio .col-left .bio-img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid var(--main-color);
 	}
-	.info {
-		padding-left: 70px;
+	#bio .col-right {
+		text-align: left;
+		padding: 30px;
 	}
-	.container {
+	#bio .col-right h1 {
+		text-align: left;
+	}
+	/* End bio */
+
+	/* kontakt  */
+
+	#kontakt .kontakt {
 		flex-direction: column;
-	}
-	#header .brand h1 {
-		display: none;
-	}
-	#header .logo {
-		display: block;
-		color: red;
-		font-weight: bold;
-		font-size: 50px;
-		/*padding-left: 20px;*/
-		position: fixed;
-		top: 0;
-	}
-
-	#header .logo:hover {
-		color: black;
-	}
-
-/* Add these styles for the "active" class */
-#header .nav-list .vertical.active {
-    display: flex;
-}
-
-#header .nav-list .horizontal.active {
-    display: block;
-}
-
-/* Additional styles for hiding lists by default */
-#header .nav-list .vertical,
-#header .nav-list .horizontal {
-    display: none;
-}
-
-	#about .about-bottom {
-		margin-top: 0;
-		margin-right: 0;
-		margin-bottom: 50px;
-	}
-    
-	#about .swiper {
-		width: 500px;
-	}
-	#discographie .section-title {
-		padding-left: 20px;
-		font-size: 70px;
-	}
-	#projekte .projekte,
-	#discographie .projekte {
-		max-width: 767px;
-	}
-	
-	#projekte .projectbox,
-	#discographie .projectbox {
-		grid-template-columns: repeat(1,1fr);
-	}
-	#solo .solo-top {
-		text-align: center;
-	} 
-	#orchester .section-title {
-		font-size: 80px;
-	}
-	#unterricht .section-title,
-	#triofussissimo .section-title {
-		font-size: 70px;
-	}
-	.projectbox {
-		flex-direction: column;
-		max-width: 767px;
-	}
-	.projectbox img {
-		width: 500px;
-	}
-	.youtube {
-		width:500px;
-		height: auto;
-	}
-	.spotify {
-		width: 500px;
-	}
-	#news .news-column {
-		width: calc(80% - 20px);
-	}
-	#news .news{
-		justify-content: center;
+		padding: 100px 0;
 		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+        margin: 10px auto;
 	}
-	#vortrag-readmore .readmore-title,
-	#kinderkonzert-readmore .readmore-title  {
-		font-size: 50px;
-		padding-left: 5px;
-	}
-	.news-projectbox {
-		width: 500px;
-	}
-	
-	.swiper {
-		width: 500px;
-		height: 700px;
+
+	#kontakt .col-right {
+		padding-top: 60px;
 	}
 	#kontakt img {
-		width: 500px;
+		object-position: top center;
 	}
-	#kontakt .contact-name {
-		font-size: 100px;
+	
+	/* End kontakt  */
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+	/* header */
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	#unterricht .unterricht-bottom .unterricht-item {
+		flex-basis: 22%;
+		margin: 1.5%;
 	}
 }
+/* End  Media Query For Desktop */

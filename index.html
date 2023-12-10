@@ -5,156 +5,249 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
-  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <script src="app.js"></script>
-  <title>HARALD OELER</title>
+  <title>Rehan Syed</title>
 </head>
 
 <body>
-<!-- Header -->
-<section id="header">
+  <!-- Header -->
+  <section id="header" >
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-            <a href="#home" onclick="showPage('home')" data-after="home">
-                <h1>
-                    <div class="name-container">
-                        <div>harald<span style="color: white;">_</span></div>
-                        <div>oeler</div>
-                    </div>
-                </h1>
-                <span class="logo">H</span>
-            </a>            
+          <a href="#home" onclick="showPage('home')" data-after="Home">
+            <h1><span>R</span>ehan <span>S</span>yed</h1>
+          </a>
         </div>
         <div class="nav-list">
-            <ul class="vertical">
-                <li><a href="#about" onclick="showPage('about')" data-after="about">about</a></li>
-                <li><a href="#projekte" onclick="showPage('projekte')" data-after="projekte">projekte</a></li>
-            </ul>
-            <ul class="horizontal">
-                <li><a href="#termine" onclick="showPage('termine')" data-after="termine">termine</a></li>
-                <li><a href="#news" onclick="showPage('news')" data-after="news">news</a></li>
-                <li><a href="#unterricht" onclick="showPage('unterricht')" data-after="unterricht">unterricht</a></li>
-                <li><a href="#discographie" onclick="showPage('discographie')" data-after="discographie">discographie</a></li>
-                <li><a href="#media" onclick="showPage('media')" data-after="media">media</a></li>
-                <li><a href="#kontakt" onclick="showPage('kontakt')" data-after="kontakt">kontakt</a></li>
-            </ul>
-            <ul>
-                <a href="#" class="toggle" id="toggleBtn"><i class="fas fa-bars"></i></a>
-            </ul>
-
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#bio" onclick="showPage('bio')" data-after="bio">bio</a></li>
+            <li><a href="#tour" onclick="showPage('tour')" data-after="tour">tour</a></li>
+            <li><a href="#projekte" onclick="showPage('projekte')" data-after="projekte">projekte</a></li>
+            <li><a href="#CD" onclick="showPage('CD')" data-after="CD">CD</a></li>
+            <li><a href="#unterricht" onclick="showPage('unterricht')" data-after="unterricht">unterricht</a></li>
+            <li><a href="#download" onclick="showPage('download')" data-after="download">download</a></li>
+            <li><a href="#kontakt" onclick="showPage('kontakt')" data-after="kontakt">kontakt</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  
-</section>
-<!-- Include this script in your HTML file -->
-
-  
+  </section>
   <!-- End Header -->
 
+
   <!-- home Section  -->
-  <section id="home">
+  <section id="home" class="page">
     <div class="home container">
       <div>
-        <div class="name">HARALD <br>OELER
-            <span class="disappear-word">_</span></br><span class="namespan"></span>
-        </div>
-        <div class="instrument">
-            <p>ACCORDIONIST & TEACHER & COMPOSER <i id="play" class="fa-solid fa-circle-play" style="color: #ffffff;"></i></p>
-        </div>
-        <audio id="audio">
-            <source src="MarktVonLimoges.mp3" type="audio/mp3">
-        </audio>
-        <script>
-            var audio = document.getElementById("audio");
-            var play = document.getElementById("play");
-
-            play.onclick = function(){
-            audio.play();
-            }
-        </script>
-    </section>
+        <h1>MUSIKER<span></span></h1>
+        <h1>& KOMPONIST<span></span></h1>
+        <h1>REHAN SYED<span></span></h1>
+        <a href="#tour" type="button" class="cta" onclick="showPage('tour')" data-after="tour">TOUR</a>
+      </div>
+    </div>
   </section>
   <!-- End home Section  -->
 
-  <!-- about Section -->
-  <section id="about" class="page">
-    <div class="about container">
-      <div class="about-top">
-        <h1 class="section-title">About</h1>
-        <div class="text-column">
-            <span class="de">DE </span>
-            <input type="checkbox" class="check">
-            <span class="en">EN</span>
-            <div class="content content-en">
-                <p>Harald Oeler wurde 1977 in Bietigheim-Bissingen geboren. Nach Abschluss seines künstlerischen Diploms mit Auszeichnung setzte er sein Studium in der Meisterklasse von <a href="https://hfm-wuerzburg.de/lehre/hussong-stefan" target="_blank">Prof. Stefan Hussong</a>, sowie im Studiengang Jazz bei <a href="https://hfm-wuerzburg.de/lehre/schneider-christine" target="_blank">Christine Schneider</a> an der <a href="https://hfm-wuerzburg.de" target="_blank">Hochschule für Musik in Würzburg</a> fort.
-                <br>Harald Oeler ist Preisträger bei vielen nationalen und internationalen Musikwettbewerben, darunter der 3. Preis beim 3rd <a href="https://www.npo-jaa.jp/what-s-jaa/" target="_blank">Accordion Competition JAA Tokio/Japan</a> 2002. Als erster deutscher Akkordeonist wurde er 2007 beim bedeutendsten <a href="https://hauspoz.org/arrasate-accordion-competitions/" target="_blank">internationalen Akkordeon-Wettbewerb in Arrasate</a> (Spanien)  mit einem 2. Preis ausgezeichnet. Mit dem <a href="https://nachrichten.idw-online.de/2008/06/12/1-preis-bei-internat-akkordeonwettbewerb-fuer-2-musiker-der-hochschule-fuer-musik-wuerzburg" target="_blank">Akkordeonduo Animé</a> erzielte er 2008 den 1. Preis beim 45. <a href="https://accordion-competition.de/index.html" target="_blank">Internationalen Akkordeonwettbewerb Klingenthal</a>. Harald Oeler arbeitete bereits zusammen mit <a href="https://www.franckollu.com" target="_blank">Franck Ollu</a>, <a href="https://en.wikipedia.org/wiki/Beat_Furrer" target="_blank">Beat Furrer</a>, <a href="https://hp-salentin.de" target="_blank">Hans Peter Salentin</a> und den Schauspielerninnen <a href="https://evamattes.com" target="_blank">Eva Mattes</a> und <a href="https://de.wikipedia.org/wiki/Susanne_Lothar" target="_blank">Susanne Lothar</a>.
-                <br>Er ist Alumnus der <a href="https://www.studienstiftung.de" target="_blank">Studienstiftung des deutschen Volkes</a> und der <a href="https://livemusicnow.de" target="_blank">Yehudi Menuhin Stiftung „Live Music Now“</a>. 2008 wurde er als erfolgreichster Absolvent Bayerischer Musikhochschulen mit dem <a href="https://www.bayernwerk.de/de/ueber-uns/engagement/kultur-und-tradition/kulturpreis-bayern.html" target="_blank">Bayerischen Kulturpreis</a> ausgezeichnet.</p>
-                <a class="download" href="CV.pdf" download="CV_Deutsch.pdf">CV Deutsch</a>
-            </div>
-            <div class="content content-de">
-                Harald Oeler (* 1977 in Bietigheim-Bissingen) is a german accordionist. 
-                He received his first lessons on the accordion as a six-year-old. After completing organ studies, he received instruction on the accordion from Hans Bogner in Gaggenau, Germany in preparation for conservatory study. After successfully competing in Jugend musiziert and Jugend komponiert competitions, he began studying with Prof. Hugo Noth. He continued his studies with Prof. Stefan Hussong at the Würzburg Musikhochschule in 2001, where, upon completing his performing arts degree (künstlerisches Diplom) with distinction in 2005, he was accepted into the master class. During his studies, Harald Oeler won prizes at national and international competitions, including 3rd Prize at the Third International Accordion Competition JAA Tokyo/ Japan and 2nd Prize at the 2005 German Music Conservatory Competition. Harald Oeler was awarded a scholarship by the German National Merit Foundation and has received support from “Live music now” (Yehudi Menuhin Program for Supporting Young Musicians). Harald Oeler pursues a very active career as a concert artist in Germany and internationally, performing as a soloist and in various ensembles.
-                <a class="download" href="CV.pdf" download="CV_English.pdf">CV English</a>
-            </div>
+  <!-- unterricht Section -->
+  <section id="unterricht" class="page">
+    <div class="unterricht container">
+      <div class="unterricht-top">
+        <h1 class="section-title">Unter<span>richt</span></h1>
+        <h2>Von Anfang an im Ensemble lernen!</h2>
+        <p>Ein völlig neues Unterrichtskonzept in dem Rhythmik, Bass, Akkordbegleitung und Mitsingen gleichzeitig vermittelt wird und in verschiedenen Level auf jedes Spielniveau und jedes Alter abgestimmt. Lernen im Ensemble von Anfang an! Das garantiert ein Maximum an Spass und Motivation und einen musikalisch ganzheitlichen Lerneffekt! </p>
+      </div>
+      <div class="unterricht-bottom">
+        <div class="unterricht-item">
+          <a href="#musiksafari" onclick="showPage('musiksafari'); return false;"><img class="unterrichticon" src="image/unterricht1.jpeg"></a>
+          <h2><a href="#musiksafari" onclick="showPage('musiksafari'); return false;">Musik Safari<a></h2>
+          <p>für Kinder im Vorschulalter oder in der 1. Klasse Grundschule</p>
+        </div>
+        <div class="unterricht-item">
+          <div class="icon"></div>
+          <h2>
+            <a href="#ensemble" onclick="showPage('ensemble'); return false;">
+              Acoustic Pop Ensemble
+            <a>
+          </h2>          
+          <p>für Erwachsene, Jugendliche und Kinder ab 8 Jahren</p>
+        </div>
+        <div class="unterricht-item">
+          <div class="icon"></div>
+          <h2>
+            <a href="#workshop" onclick="showPage('workshop'); return false;">
+              Gypsy Jazz Workshop<a>
+          </h2>            
+          <p>Das Angebot reicht von Workshops für Gypsy Jazz Anfänger bis zum Profi! </p>
         </div>
       </div>
-      <div class="about-bottom">
-        <div class="swiper mySwiper">     
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="image/1.jpg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="image/2.jpg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="image/3.jpg">
-                </div>
+    </div>
+  </section>
+  <!-- End unterricht Section -->
+  <section id="musiksafari" class="unterrichtangebot page">
+    <div class="unterricht container">
+      <div class="unterricht-top">
+        <h1 class="section-title">MUSIK<span>SAFARI</span></h1>
+        <div class="info">
+          <div class="box left">
+            <img src="image/musiksafari.jpeg">        
+            <img src="image/musiksafari2.jpeg">
+            <br>
+            <p>Der Unterricht findet im <a class="bold" href="https://neunerplatz.de" target="_blank">Theater am Neunerplatz</a> statt.</p>
+            <p>Anmeldung oder Anfragen per Mail unter <a href="mailto:info@rehansyed.de">info@rehansyed.de</a>.</p>
+          </div>
+          <div class="box right">
+            <div class="section">
+              <h2>Für Kinder im Vorschulalter oder in der 1. Klasse Grundschule</h2>
+              <p>Unterricht in 10 Einheiten mit Ukulele (als Hauptinstrument), Bass-Ukulele und Cajon. Altersgerecht wird mit Spielen, viel Bewegung und 3 unterschiedlichen Instrumenten der Spass am Musizieren vermittelt.</p>
+              <br>
+              <p>Unterrichtsgebühr für den ganzen Kurs: 120,- Euro 
+              <br>Eventuelle Leihgebühr: 5,- Euro (plus 15,- Euro Kaution)</p>
             </div>
-            <div class="swiper-pagination"></div>
-            </div>
+            <div class="section" >
+              <h2>Termine für den nächsten Kurs ab Januar 24:  </h2>
+              <p>>  Gruppe 1 jeweils um 16:00 (Anfänger)
+              <br>>  Gruppe 2 jeweils um 17:00 (weiterführend)</p>
+              <ul>
+                <li>Di, 09. Januar</li>
+                <li>Di, 16. Januar</li>   
+                <li>Di, 23. Januar</li> 
+                <li>Di, 30. Januar</li> 
+                <li>Di, 06. Februar</li> 
+                <li>Di, 20. Februar</li> 
+                <li>Di, 27. Februar</li> 
+                <li>Di, 05. März</li> 
+                <li>Di, 12. März</li> 
+                <li>Di, 19. März</li>
+              </ul>
+            </div>        
+          </div>
+        </div>    
       </div>
   </section>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
-  <!-- End about Section -->
-
+  <section id="ensemble" class="unterrichtangebot page">
+    <div class="unterricht container">
+      <div class="unterricht-top">
+        <h1 class="section-title">ACOUSTIC POP<span> ENSEMBLE</span></h1>
+        <div class="info">
+          <div class="box left">
+            <img src="image/ensemble1.jpeg">        
+            <img src="image/ensemble2.jpeg">
+            <br>
+            <p>Der Unterricht findet im <a class="bold" href="https://neunerplatz.de" target="_blank">Theater am Neunerplatz</a> statt.</p>
+            <p>Anmeldung oder Anfragen per Mail unter <a href="mailto:info@rehansyed.de">info@rehansyed.de</a>.</p>
+          </div>
+          <div class="box right">
+            <div class="section">
+              <h2>für Erwachsene, Jugendliche und Kinder ab 8 Jahren</h2>
+              <p>Unterricht in 10 Einheiten mit Gitarre, Bass-Ukulele und Cajon.
+                Aufgeteilt in 3 Level. Für Anfänger und Fortgeschrittene.
+                Durch das Zusammenspiel mit mehreren Teilnehmern und drei
+                verschiedenen Instrumenten ist der Spass von Anfang an dabei. </p>
+              <br>
+              <p>Unterrichtsgebühr für den ganzen Kurs: 120,- Euro 
+              <br>Eventuelle Leihgebühr: 5,- Euro (plus 15,- Euro Kaution)</p>
+            </div>
+            <div class="section">
+              <h2>Derzeit keine Termine für Akustik Pop Ensemble</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="workshop" class="unterrichtangebot page">
+    <div class="unterricht container">
+      <div class="unterricht-top">
+        <h1 class="section-title">GYPSY JAZZ<span> WORKSHOP</span></h1>
+        <div class="info">
+          <div class="box left">
+            <img src="image/rehan2.jpg">
+          </div>
+          <div class="box right">
+            <div class="section">
+              <h2>Für alle die mehr über diese faszinierende Stilistik entdecken wollen, </h2> 
+              <p>entweder um sie besser zu beherrschen oder sich einfach nur inspirieren zu lassen.</p>
+              <br>
+            <p>Das Angebot reicht von Workshops für Gypsy Jazz Anfänger bis zum Profi!</p>
+            <p>Die Workshop-Einheit  beinhaltet ca. 6 Stunden Unterricht plus Mittagspause (Beginn 10:00, Ende zwischen 17:00 und 18:00, je nach Anzahl der Teilnehmer).
+              Alle Seminare werden von Rehan Syed professionell mit hohem inhaltlichen und pädagogischen Anspruch vorbereitet. Zu jedem Workshop gibt es immer ein vollständiges Skript mit Tabs und Noten. Zusätzlich gibt es zu allen vorgestellten Licks und Solos ein Video. Das Skript und die Videos sind als längerfristiges Übungsmaterial für zuhause zusammen gestellt.</p>
+            </div>
+            <div class="section">
+              <h2>Workshop Termine</h2>
+              <ul>
+                <li>Würzburg, 22.September.2019</li>
+                <li>Würzburg, 28.Juli.2019</li>
+                <li>Würzburg, 11.Mai 2019</li>
+                <li>Würzburg, 23./24. Feb. 2019</li>
+              </ul>
+            </div>
+            <a href="#bigdjango" type="button" class="cta" onclick="showPage('bigdjango')" data-after="bigdjango">BIG DJANGO WORKSHOPS</a>
+          </div>
+      </div>
+  </section>
+  <section id="bigdjango"class="unterrichtangebot page">
+    <div class="unterricht container">
+      <div class="unterricht-top">
+        <h1 class="section-title"><span>BIG DJANGO </span>WORKSHOPS</h1>
+        <h2>Eine Übersicht über das spezielle Workshopkonzept "Big Django" von Rehan Syed.</h2>
+        <p>Zu allen Workshops gibt es immer vollständige Skripts mit Tabs und Noten, und außerdem eine DVD mit Videomaterial zu allen Licks und Solos!</p>
+        <p>BIG DJANGO School - Complete Gypsy Jazz Workshop mit Rehan Syed & Guests
+          mehr als 10 Einheiten für ein Lernerlebnis mit der faszinierenden Musik Django Reinhardts und seinen Erben.</p>
+      </div>
+      <div class="unterricht-bottom">
+        <div class="section">
+          <h2>Das Konzept:</h2>
+          <p>
+            Über 10 Workshops die aufeinander aufbauen und einem pädagogischen Konzept folgen. Außerdem gibts professionelle Tools in Form von PDFs und Videos dazu. Ein komplettes Skript mit allen Licks, Solos etc. und den dazu gehörenden Video Clips sind ein wichtiger Bestandteil der Workshops um ein effektives Üben zuhause zu garantieren, auch wenn der Teilnehmer während dem Workshop nicht immer mitkommt!
+            So kann auch jeder Teilnehmer selbst entscheiden wann er den nächsten Input haben möchte.
+            Weiterer Bonuspunkt: Wechselnde Gastdozenten wie Joscho Stephan, Gismo Graf, Wawau Adler, Diknu Schneeberger kommen dazu und demonstrieren Ihre speziellen Fähigkeiten. Rehan Syed verfasst den Stoff in ein Konzept mit schriftlichen Unterlagen und zusätzlichen Videos mit den Gastdozenten.
+             </p>
+        </div>
+        <div class="section">
+          <h2>Ablauf:</h2>
+          <p>
+            Jeder Kurs besteht aus einer Workshop-Einheit mit ca. 6 Stunden Unterricht. Außerdem gibt es pro Jahr 1-2 Workshops mit einem Gastdozent aus der internationalen Klasse. 
+            Bei Workshops mit Gastdozent findet abends  ein öffentliches Konzert mit den Dozenten statt. Workshop-Teilnehmer bekommen eine Karte zum Minipreis. 
+            Die Teilnehmerzahl bei den normalen Workshops ist auf maximal 10 Teilnehmer und bei den Workshops mit Gastdozenten auf maximal 14 Teilnehmer begrenzt.
+            Die Workshops beginnen am Veranstaltungstag um 10.00 Uhr und enden  um  17:00 Uhr ( Mittagspause ca. 1 Std.). </p>
+        </div>
+        <div class="section">
+          <h2>Veranstaltungsort:</h2>
+          <p>Die Workshop-Orte können nach Bedarf und Programm wechseln. Meistens finden die Workshops jedoch in  Würzburg statt: 
+            <br><a target="_blank" href="https://www.skf-wue.de/einrichtungen/juz-jugendzentrum-zellerau/einrichtung.html">Jugendzentrum Zellerau</a> · Weißenburgstraße 43 · 97082 Würzburg  
+          <br>Und seit 2017 auch regelmäßig in München mit wechselnden Veranstaltungsräumen.</p>
+        </div>
+        <div class="section">
+          <h2>Pricing:</h2>
+          <p>Die Gebühr beträgt 80,- Euro für die eintägigen, 140,- Euro für die zweitägigen Workshops und  100,- bis 120,-  Euro für die eintägigen Workshops mit Gastdozent und ist vorab zahlbar.</p>
+        </div>
+        <div class="section">
+          <h2>Für wen ist "Big Django" geeignet?</h2>
+          <p>BIG DJANGO fängt mit Workshops für Gypsy Jazz Anfänger an und endet mit Seminaren auf professionellem Niveau. Hier kann man ganz praktisch was lernen - von den Basics (Rhythmusgitarre), über Melodien bis hin zum eigenen Solo. 
+          <br>Je nach Stand können fortgeschrittene Gitarristen auch bei späteren Modulen einsteigen.
+          <br>Im Laufe der Zeit werden sich die Kurse wiederholen. Der komplette Zyklus wird wohl ca. 2 Jahre dauern. </p>
+        </div>
+        <div class="section">
+          <h2>Anmeldung:
+          <p>Über  Rehan Syed per Mail.  Bitte wartet auf die Antwortmail mit der Bankverbindung und überweist nur dorthin! Die Anmeldung ist gültig sobald das Geld überwiesen und angekommen ist.</p>
+          <p><a href="mailto:info@rehansyed.de">info@rehansyed.de</a>.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
   <!-- projekte Section-->
   <section id="projekte" class="page">
-    <div class="projekte-header">
-        <h1 class="section-title">projekte</h1>
-    </div>
     <div class="projekte container">
+      <div class="projekte-header">
+        <h1 class="section-title">Recent <span>projekte</span></h1>
+      </div>
     <div class="projectbox">
         <div class="box">
             <img class="img1" src="image/project1.jpg" alt="Project 1">
-            <div class="card-body">
-                <h2 class="card-title">SOLO</h2>
-                <p>Einzigartige Akkordeonmusik <br>der Klassik, Neuen Musik und dem Jazz</p>
-                <a href="#solo" class="card-btn" onclick="showPage('solo')">info</a>
-            </div>
-        </div>
-        <div class="box">
-            <img class="img2" src="image/project5.jpg" alt="Project 5">
-            <div class="card-body">
-                <h2 class="card-title">ORCHESTER</h2>
-                <p class="card-info">Solistisches Repertoire mit Orchester</p>
-                <a href="#orchester" class="card-btn" onclick="showPage('orchester')">info</a>
-            </div>
-        </div>
-        <div class="box">
-            <img class="img3" src="image/project2.jpg" alt="Project 2">
             <div class="card-body">
                 <h2 class="card-title">TRIO FUSSISSIMO</h2>
                 <p>Gypsy-Ethno-Jazz Ensemble</p>
@@ -162,1094 +255,552 @@
             </div>
         </div>
         <div class="box">
-            <img class="img4" src="image/project3.png" alt="Project 3">
+            <img class="img2" src="image/project2.jpeg" alt="Project 2">
             <div class="card-body">
-                <h2 class="card-title">DUO ViA!</h2>
-                <p class="card-info">Transkriptionen aus vier Jahrhunderten</p>
-                <a href="#duovia" id="card-btn" class="card-btn" onclick="showPage('duovia')">info</a>
+                <h2 class="card-title">Rehan Syed Ensemble</h2>
+                <p class="card-info">von Django bis Tango</p>
+                <a href="#RSEnsemble" class="card-btn" onclick="showPage('RSEnsemble')">info</a>
             </div>
         </div>
         <div class="box">
-            <img class="img5" src="image/project4.jpg" alt="Project 4">
+            <img class="img3" src="image/project3.jpeg" alt="Project 3">
             <div class="card-body">
-                <h2 class="card-title">DUO KlAkk!</h2>
-                <p class="card-info">Neue Musik x Alte Musik </p>
-                <a href="#duoklakk" class="card-btn" onclick="showPage('duoklakk')">info</a>
+                <h2 class="card-title">Syed & Park Duo</h2>
+                <p>Akustik Jazz & Gypsy mit 2 Gitarren</p>
+                <a href="#syedpark" class="card-btn" onclick="showPage('syedpark')">info</a>
             </div>
         </div>
         <div class="box">
-            <img class="img6" src="image/project6.jpg" alt="Project 6">
+            <img class="img4" src="image/project4.jpeg" alt="Project 4">
             <div class="card-body">
-                <h2 class="card-title"> HOFER MUSIKSCENE</h2>
-                <p class="card-info">Jazz Projekts in Hof</p>
-                <a href="#hof" class="card-btn" onclick="showPage('hof')">info</a>
+                <h2 class="card-title">Milonga Dunja</h2>
+                <p class="card-info">Ethno Jazz, featuring Asaf Sirkis - drums</p>
+                <a href="#milonga" class="card-btn" onclick="showPage('milonga')">info</a>
             </div>
         </div>
-    </div>
-</section>
-<!-- End projekte Section -->
-
-<section id="solo" class="page">
-    <div class="projekte-header">
-        <a href="#projekte" onclick="showPage('projekte'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
-        <h2 class="section-title">SOLO</h2>
-    </div>
-    <div class="projekte container">
-        
-    <div class="projectbox">
-        <div class="col-left">
-            <img src="image/solo.jpg">
-            <p>Künstlerisch bewegt sich Harald Oeler in einem weiten Feld, welches von der (Ur-) Aufführung zeitgenössischer Werke, über die Transkription klassischer Werke für das Akkordeon, bis hin zum Jazz reicht. 
-            <br>
-            <br>Harald Oeler wirkte bei verschiedenen Projekten und Festivals mit, darunter der "<a target="_blank" href="https://www.heidelberger-fruehling.de">Heidelberger Frühling</a>"", das "<a target="_blank" href="https://www.vgh-stiftung.de/Projekt/literaturfest-niedersachsen/">Literaturfest Niedersachsen</a>"", die <a target="_blank" href="https://www.musiktage-hitzacker.de/home.html">"Sommerliche Musiktage Hitzacker</a>" der Frankfurter "<a href="https://www.museumskonzerte.de/konzerte/museumssalon-konzerte-in-privaten-raeumen/" target="_blank">MuseumsSalon</a>" und Jazzfestivals wie das "<a target="_blank" href="https://www.br-klassik.de/themen/jazz-und-weltmusik/django-reinhardt-memorial-augsburg-100.html">Django Memorial Augsburg</a>"" und das "<a target="_blank" href="https://www.hr2.de/veranstaltungen/jazzfestival/djf23_veranst_uebersicht_54-jazzfestival-frankfurt-100.html">Frankfurter Jazzfestival</a>"". 
-            <br>
-            <br>Konzertreisen führten Harald Oeler bereits nach China, Korea, Rumänien, Finnland, Schweden, Italien, Österreich, Schweiz und Polen. Zahlreiche CD Produktionen bei <a target="_blank" href="https://www.oehmsclassics.de">OehmsClassics</a>, <a target="_blank" href="https://www.genuin.de/de/0403.php">Genuin</a> und Thorofon/<a target="_blank" href="https://www.bella-musica.de">Bella Musica</a> repräsentieren sein breitgefächertes Konzertleben.</p>
-        </div>
-        <div class="col-right">
-            <div class="solo-top">
-                <h2>Pictures at an Exhibition</h2>
-                <p>Modest Mussorgsky - Pictures at an Exhibition
-                <br>Sofia Gubaidulina - Et expecto</p>
-            </div>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/02LouxvRMRz0bj5etTqFpL?utm_source=generator&theme=0" height="200" class="spotify" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <p>The precision of the piano and the suction power of the orchestra – the accordion unites both of these. To put it more precisely, the bayan, played by Harald Oeler, unites them in the most beautiful way. And which work shows this more impressively than Mussorgsky’s Pictures at an Exhibition? Oeler plays these movements in his own, magnificently colourful adaptation. The gnome hisses more angrily than ever and the little chicks flutter and peep their heads off, making it a pure joy for us to hear. Just how broad Oeler’s dynamic spectrum is can be experienced both in the enormous arch-form of the Great Gate of Kiev and in the whirring sound masses and harsh rhythms of <a target="_blank" href="https://en.wikipedia.org/wiki/Sofia_Gubaidulina">Sofia Gubaidulina</a>’s “Et expecto,” the second work on the new GENUIN CD. These are two Russian compositions, two centuries, two styles – an exciting combination, carried along by the drive and long breath of a true virtuoso. </p>
-            <div class="review">
-                <ul>
-                    <li>"Oeler’s transcription unites the advantages of the original piano version and Ravel’s orchestral adaptation. On the one hand, the accordion offers a homogeneous sound comparable to that of the piano. On the other hand, it has an astounding range of colours and dynamics which one would not normally expect of this underestimated instrument." 
-                    <span class="bold"><a href="https://ugc.radiobremen.de/radioplayer/nordwestradio/console/index.html" target="_blank">Nordwest-Radio</a></span></li>
-                </ul>
+        <div class="box">
+            <img class="img5" src="image/project5.jpeg" alt="Project 5">
+            <div class="card-body">
+                <h2 class="card-title"> "Django" eine Geschichte mit Bildern und Musik</h2>
+                <p class="card-info">nach dem Kinderbuch von Frans Haaken</p>
+                <a href="#project5" class="card-btn" onclick="showPage('project5')">info</a>
             </div>
         </div>
-    </div>
-</section>
-<section id="orchester" class="page">
-    <a href="#projekte" onclick="showPage('projekte'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
-    <h2 class="section-title">ORCHESTER</h2>
-    <p class="info">Solistisches Repertoire mit Orchester</p>
-    <div class="projectbox">
-        <div class="col-left">
-            <img src="image/project5.jpg">
-            <div>
-                <ul class="programm">
-                    <h2>Repertoire</h2>
-                    <li>
-                        <span class="bold">Johann Sebastian Bach (1685-1750)</span>
-                        <p>Cembalokonzert d-Moll, BWV 1052</p>
-                        <p>1. Allegro</p>
-                        <p>2. Adagio</p>
-                        <p>3. Allegro</p>
-                    </li>
-                    <li>
-                        <span class="bold">Johann Sebastian Bach (1685-1750)</span>
-                        <p>Konzert für zwei Cembali und Streichorchester, BWV 1061</p>
-                        <p>1. Allegro</p>
-                        <p>2. Adagio Ovvero Largo</p>
-                        <p>3. Fuga</p>
-                    </li>
-                    <li>
-                        <span class="bold">Vaclav Trojan (1907-1983)</span>
-                        <p>„Pohadky“ - „Märchen“ für Akkordeon und Symphonieorchester</p>
-                        <p>1. Der Tanz in das Märchen</p>
-                        <p>2. Die verschlafene Prinzessin</p>
-                        <p>3. Das Zauberkästchen</p>
-                        <p>4. Die verzauberte Prinzessin, der tapfere Ritter und der böse Drache</p>
-                        <p>5. Das ausgelassene Karusell</p>
-                        <p>6. Vom Matrosen mit dem verhexten Schifferklavier</p>
-                        <p>7. Das Märchen von den Akrobaten</p>
-                    </li>
-                    <li>
-                        <span class="bold">Richard Galliano (*1950)</span>
-                        <p>„Opale Concerto" für Akkordeon und Streichorchester</p>
-                        <p>1. Allegro furioso</p>
-                        <p>2. Moderato malinconico</p>
-                        <p>3. Allegro energico (New York Tango)</p>
-                    </li>
-                    <li>
-                        <span class="bold">Astor Piazzolla (1921-1992)</span>
-                        <p>„Ballet-Tango“ für Akkordeon und Streichorchester </p>
-                    </li>
-                    <li>
-                        <span class="bold">Arrangements by: Erhard Cotta</span>
-                        <p>„Philharmonic Gypsy-Swing“ für Jazz-Band (Acc., Git., Db., Dr.) und Symphonieorchester
-                    </li>
-                    <li>
-                        <span class="bold">Ole Schmidt (1928-2010)</span>
-                        <br>„Symphonic Fantasy and Allegro“
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-right programm">
-            <li>
-                <iframe class="youtube" src="https://www.youtube.com/embed/WFCRiyENZxk?si=Nd1v95pq2rql1UpH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
-                <p>Johann Sebastian Bach | Cembalokonzert d-Moll, BWV 1052</p>
-            </li>
-            <li>
-                <iframe class="youtube" src="https://www.youtube.com/embed/2OJ2BstBZCw?si=_1Fdp2SYgmfHXeGx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Astor Piazzolla | „Ballet-Tango“ für Akkordeon und Streichquartett</p>
-            </li>
-            <li>
-                <iframe class="youtube" src="https://www.youtube.com/embed/GATut_MZPHY?si=reZRPLNdP_VfD3t1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
-                <p>Arrangements by: Erhard Cotta | „Philharmonic Gypsy-Swing“ für Jazz-Band (Acc., Git., Db., Dr.) und Symphonieorchester</p>
-            </li>
-        </div>
-    </div>
-</section>
-<section id="triofussissimo" class="page">
-    <a href="#projekte" onclick="showPage('projekte'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
-    <h2 class="section-title">TRIO FUSSISSIMO</h2>
-    <p class="info"><a target="_blank" href="http://www.rehansyed.com">Rehan Syed</a> (Gitarre) & Simon Ort (Bass) & Harald Oeler (Akkordeon)</p>
-    <div class="projectbox">
-        <div class="col-left">
-            <img src="image/triofussissimo.jpg">
-            <p>Virtuose Spieltechnik und jede Menge Inspirationen aus Jazz und Weltmusik! Diese Kombination macht das Trio zu einem besonders interessanten Gypsy-Ethno-Jazz Ensemble!
-                Seit fast 20 Jahren hat sich der Gitarrist und Komponist Rehan Syed mit seinen projekteen einen wohlklingenden Namen in der Gypsy Jazz-Szene erspielt und ist nun mit dem erstklassigen Bassisten Simon Ort am Kontrabass und dem preisgekrönten Akkordeonisten Harald Oeler in einer Trio-Besetzung zu hören, die es in sich hat! Zum Programm von „Trio Fussissimo“ gehören originelle Eigenkompositionen von Rehan Syed mit Einﬂüssen von Tango, Bossa, französischer Musette und orientalischer Musik, und Perlen aus dem Gypsy Jazz und Weltmusik Repertoire.</p>
-        </div>
-        <div class="col-right">
-            <h2></h2>
-            <ul class="programm">
-                <li>
-                    <iframe class="youtube" src="https://www.youtube.com/embed/TsTN3AgrpbU?si=lDWTtG0d7rmXX4Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Made in France - live in der musik-butik</p>
-                </li>
-                <li>
-                    <iframe class="youtube"  src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-                    <p>Made in France - live in der musik-butik</p>
-                </li>
-                <li class="review">Booking : <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></li>
-            </ul>
-        </div>
-    </div>
-</section> 
-<section id="duovia" class="page">
-    <a href="#projekte" onclick="showPage('projekte'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
-    <h2 class="section-title">DUO ViA!</h2>
-    <p class="info"><a target="_blank" href="https://sinn-yang.webflow.io">Sinn Yang</a> (Violine) & Harald Oeler (Akkordeon)</p>
-    <div class="projectbox">
-        <div class="col-left">
-            <img src="image/project3.png">
-            <br>
-            <span class="de">DE </span>
-            <input type="checkbox" class="check">
-            <span class="en">EN</span>              
-            <div class="content content-en">
-                Neue Klangwelten entdecken – ein Ziel, das sich mit der außergewöhnlichen Besetzung aus Violin und Akkordeon spielerisch erreichen lässt.
-                <br>„Duo ViA!“s CD der „8 Jahreszeiten“ von Vivaldi und Piazzolla erschien 2014 bei <a href="https://www.oehmsclassics.de/interpret/6934/DuoVia" target="_blank">OehmsClassics</a> und erhielt begeisterte Kritiken. Mit Neugierde und Experimentierlust erkunden beide Künstler in ihrer exotischen Besetzung Meisterwerke der zeitgenössischen Musik, Bach, Chick Corea u.a. und traten erfolgreich in Konzerten, wie z.B. beim Festival <a href="https://www.heidelberger-fruehling.de" target="_blank">„Heidelberger Frühling“</a>, Berlin, München, Bracciano / Italien und Helsinki auf.
-            </div>
-            <div class="content content-de">
-                <p>The Duo ViA! made their debut in 2009 with the programme Seasons at the Heidelberg Spring Festival. At that time, it required a great deal of courage to present to the public, in a sold-out hall, one of the most popular and most frequently played classical works, Vivaldi’s I quattro stagioni in combination with Astor Piazzolla’s Las cuatro portenas. For the Duo, the programme Seasons was might have felt similarly when he designated his Four Seasons in the series of twelve violin concertos as “a bold adventure of harmony and invention” (“Il Cimento dell’Armonia e dell’Invenzione”).</p>
-            </div>
-        </div>
-        <div class="col-right">
-            <iframe  class="youtube"  src="https://www.youtube.com/embed/kw7_NO-klxM?si=WMlvblSPOAOChYwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="spotify" src="https://open.spotify.com/embed/album/0MfH41bgOifWl6W9fXDcW1?utm_source=generator&theme=0" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <div class="review">
-                <ul>
-                    <li>"Yang und Oeler spielen wie aufeinander eingeschworen, sie bilden nicht nur rhythmisch eine Einheit. Der Dauerbrenner von Vivaldi erscheint hier stellenweise wie unter dem Mikroskop." <span class="bold">NDR</span></li>
-                    <li>„Akkordeon und Solo-Geige verschmelzen auf eine neue, man könnte fast sagen: ideale Weise.“ <span class="bold">NDR Kultur</span></li>
-                    <li>„Hier haben sich zwei Interpreten außergewöhnlichen Ranges zusammengefunden, um Altbewährtes in neuem Gewande und auf höchstem Niveau vorzustellen.” <span class="bold">Musikzeitung</span></li>
-                    <li>Booking : <a href="mailto:sinnyang@gmail.com">sinnyang@gmail.com</a></li>
-                </ul>
-            </div>
-            <div class="ablumpurchase">
-                <a target="_blank" href="https://open.spotify.com/album/0MfH41bgOifWl6W9fXDcW1"><i class="fa-brands fa-spotify"></i></a>
-                <a target="_blank" href="https://music.apple.com/de/album/vivaldi-piazzolla-8-seasons/891761348?l=en-GB"><i class="fa-brands fa-apple"></i></a>
-                <a target="_blank" href="https://www.amazon.de/8-Jahreszeiten-Sinn-Yang/dp/B00JAS12DM"><i class="fa-brands fa-amazon"></i></a>
-            </div>
-        </div>
-    </div>
-</section> 
-<section id="duoklakk" class="page">
-    <a href="#projekte" onclick="showPage('projekte'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
-    <h2 class="section-title">DUO KlAkk!</h2>
-    <p class="info">Ji Eun Kim (Klarinette) & Harald Oeler (Akkordeon)</p>
-    <div class="projectbox">
-        <div class="col-left">
-            <img src="image/duoklakk.jpg">
-            <p>Das 2023 neu gegründete Duo KlAkk! machte sich von Anfang zur Aufgabe, einerseits Neue Musik zeitgemäß und modern zu vermitteln und andererseits dieser Transkriptionen Alter Musik, kontrapunktisch gegenüber zu stellen. Das Oeuvre des jungen Duos zeigt sich in multimedialer und stilistisch bunter Gestallt, der Lebhaftigkeit unseres Gesellschaftsbildes angepasst, ohne dabei in eine von reinen Effekten beherrschten Musik abzurutschen. <span class="bold">KlAkk!</span>… Name und Geräusch zugleich, vereint die instrumentale Besetzung und das Geräusch eines „power-on“ Kippschalters in sich. Diese finden sich nämlich an den vielfälltigen elektronischen Geräten des Duos, wie z.B. einem Line6 HX Effects, einem Schertler Jam, an Piezzos, Leuchtdioden und an digitalen Zuspielmedien.
-            <br>
-            <br>Im Mittelpunkt des Konzertprogramms steht das Werk „Double dubbing“, welches den Einsatz eines eigens erstellten Setups aus Piezzos und LEDs erfordert. Hier werden mittels elektrischer Impulse der Piezzo-Tonabnehmer, LEDs zum leuchten angeregt. Es entsteht ein lebhaftes Meer an kleinen Lichtblitzen, welche die Musik sichtbar werden lässt. 
-            <br>
-            <br>Zukünftig sieht sich KlAkk! Als Klangmedium der elektroakustischen Neuen Musik mit dem Ziel der Vermehrung originaler Literatur für Klarinette und Akkordeon im Kontext elektronischer Klangmedien.</p> 
-        </div>
-        <div class="col-right">
-            <h2>programm </h2>
-            <ul class="programm">
-                <li>
-                    <span class="bold">Joseph Haydn (1732 - 1809)</span> 
-                    <br>Divertimento in G Dur, nr 2, op. 100, für Klarinette in B und Akkordeon (Arr.Harald Oeler) 
-                    <p>1. Allegro</p>
-                    <p>2. Adagio</p>
-                    <p>3. Allegro</p>
-                </li>
-                <li>
-                    <span class="bold">Johann Svensson (1983)</span>
-                    <br>Double Dubbing (firefly song) (2020) for clarinet, accordeon & 16 piezo-buzzers
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<section id="hof" class="page">
-    <a href="#projekte" onclick="showPage('projekte'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
-    <h2 class="section-title"> HOFER MUSIKSCENE</h2>
-    <p class="info"></p>
-    <div class="projectbox">
-        <div class="col-left">
-            <img src="image/hof.jpg">
-            <p>© Kat Schulz</p>
-        </div>
-        <div class="col-right">
-            <h2> </h2>
-            <ul class="programm">
-                <li>
-                    <p class="bold">Jazz Jam Session</p>
-                    <p>@<a href="https://www.facebook.com/Kunstkaufhaus.Hof" target="_blank">KunstKaufHaus Hof</a></p>
-                    <p>Jeden ersten Dienstag, 20 Uhr</p>
-                    <p>KKH-Session-Group : Bernd Schricker, <a target="_blank" href="https://christophervonmammen.de/?page_id=4279">Christopher von Mammen</a>, Harald Oeler, Thomas Motschmann, Manfred Auer und Harry Tröger</p>
-                </li>
-                <li>
-                    <p class="bold">„NEU | START | JAZZ“</p>
-                    <p>@ <a href="https://www.vhshoferland.de" target="_blank">VHS Hofer Land</a></p>
-                    <p>Konzert in der Glashalle der VHS Hofer Land in Kooperation mit dem dem <a href="https://www.dtkvbayern.de" target="_blank">Tonkünstlerverband Bayern</a> feat. <a target="_blank" href="https://christophervonmammen.de/?page_id=4279">Christopher von Mammen</a>, Markus Jung, Harald Oeler, <a href="https://www.samueljersak.com" target="_blank">Samuel Jersak</a>, Peter Nitsch und <a href="https://julianfau.com" target="_blank">Julian Fau</a></p>
-                </li>
-            </ul>
-        </div>
-</section>
-  <!-- news Section -->
-<section id="news" class="page">
-    <h2 class="section-title">NEWS</h2>
-    <div class="news">
-        <div class="news-column">
-            <a href="#podcast-readmore" onclick="showPage('podcast-readmore'); return false;" class="read-more">
-            <img src="image/news-pittispodcast.jpeg" alt="podcast" class="news-image">
-            <h2>PODCAST | </h2>
-            <p class="date">07.Dezember.2023</p>
-            <p>Pittis Podcast. Akkordeonspecial - 40 Jahre und 200 Knöpfe. Mit Live-Musik! </p>
-            <a href="#podcast-readmore" onclick="showPage('podcast-readmore'); return false;" class="read-more">Read More</a>
-        </div>
-        <div class="news-column">
-            <a href="#vortrag-readmore" onclick="showPage('vortrag-readmore'); return false;" class="read-more">
-            <img src="image/news-symposium.png" alt="symposium" class="news-image">
-            <h2>VORTRAG | </h2>
-            <p class="date">30.November.2023</p>
-            <p>Neurologische Grundlagen und musikalische Beweglichkeit im Anfängerunterricht.</p>
-            <a href="#vortrag-readmore" onclick="showPage('vortrag-readmore'); return false;" class="read-more">Read More</a>
-        </div>
-        <div class="news-column">
-            <a href="#kinderkonzert-readmore" onclick="showPage('kinderkonzert-readmore'); return false;" class="read-more">
-            <img src="image/news-kinderkonzert.jpg" alt="kinderkonzert" class="news-image">
-            <h2>KINDERKONZERT | </h2>
-            <p class="date">22.November.2023</p>
-            <p class="hover">Eine Märchenreise mit Akkordeon und Hofer Symponiker</p>
-            <p>Read More</a>
-        </div>
-    </div>
-</section> 
-<section id="podcast-readmore" class="page">
-    <div class="news-projectbox">
-        <h2 class="readmore-title">Pittis's Podcast</h2>
-        <a href="#news" onclick="showPage('news'); return false;" class="newsback"><i class="fa-solid fa-circle-chevron-left"></i><span style="color: white;">.</span> BACK</a>
-        <h3 class="theme">Akkordeonspecial - 40 Jahre und 200 Knöpfe. Mit Live-Musik!</h3>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0qX4OVumxS2AsoomnM9AHF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <p class="newsinfo">jk</p>
-    </div>
-</section>
-<section id="vortrag-readmore" class="page">
-    <div class="news-projectbox">
-        <h2 class="readmore-title">SynapsePlus – mehr als nur 5 Töne!</h2>
-        <a href="#news" onclick="showPage('news'); return false;" class="newsback"><i class="fa-solid fa-circle-chevron-left"></i><span style="color: white;">.</span> BACK</a>
-        <h3 class="theme">Neurologische Grundlagen und musikalische Beweglichkeit im Anfängerunterricht
-        </h3>
-        <p class="newsinfo">Ausgehend von neuronalen Vernetzungen und neuroplastischen Veränderungen des menschlichen Gehirns im Kindes- und Jugendalter möchte der Vortrag zu einem technisch-musikalisch umfassenden Anfängerunterricht auf den Manualen M I und M III anregen. Es werden Möglichkeiten aufgezeigt, wie von der ersten Unterrichtsstunde an beide Manuale dynamisch flexibel, technisch selbstbewusst und reflektiert von Vorschul- bzw. Schulkindern bespielt werden können und die erlernten Fähigkeiten intuitiv auf Musikstücke übertragen werden können. Ziel des Vortrages ist es somit zu zeigen, wie ein früher Grundstein für den souveränen Umgang mit technischer und musikalischer Virtuosität bei Kindern gelegt werden kann.</p>
-    </div>
-</section>
-<section id="kinderkonzert-readmore" class="page">
-    <div class="news-projectbox">
-        <h2 class="readmore-title">Kinderkonzert</h2>
-        <a href="#news" onclick="showPage('news'); return false;" class="newsback"><i class="fa-solid fa-circle-chevron-left"></i><span style="color: white;">.</span>BACK</a>
-        <h3 class="theme">Eine Märchenreise mit Akkordeon und Hofer Symponiker</h3>
-        <iframe class="youtube" width="100%" height=315 src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        <p class="newsinfo">
-            <div class="newsinfo artist">
-                <p><span class="bold">Akkordeon </span>Harald Oeler</p>
-                <p><span class="bold">Moderation </span>Kerstin Klaholz</p>
-                <p><span class="bold">Dirigent </span>Michael Falk</p>
-            </div>
-        </p>
-    </div>
-</section>
-<section id="homepage-readmore" class="page">
-    <a href="#news" onclick="showPage('news'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i><span style="color: white;">.</span>BACK</a>
-    <h2 class="readmore-title">New Homepage</h2>
-    <p class="info">here you can...</p>
-</section>
-  
-  <!-- End news Section -->
-
-
-  <!-- Discographie -->
-  <section id="discographie" class="page">
-    <div class="projekte-header">
-        <h1 class="section-title">discographie</h1>
+        <div class="box">
+          <img class="img6" src="image/project6.jpeg" alt="Project 6">
+          <div class="card-body">
+              <h2 class="card-title">Musik für besondere Anlässe</h2>
+              <p class="card-info">stimmungsvolle Musik für Hochzeiten, Firmenfeiern, Weinproben etc.</p>
+              <a href="#project6" class="card-btn" onclick="showPage('project6')">info</a>
+          </div>
       </div>
-    <div class="discographie container">
-    <div class="projectbox">
-        <div class="box">
-            <img src="image/discography1.jpeg" alt="disco1">
-            <div class="card-body">
-                <h2 class="card-title">Antonio Vivaldi & Astor Piazzolla: <br>8 Jahreszeiten / 8 Seasons</h2>
-                <p>Geige - Sinn Yang</p>
-                <p>Akkoredeon - Harald Oeler</p>
-                <a href="#duovia" class="card-btn" onclick="showPage('duovia')">info</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/discography2.jpeg" alt="disco2">
-            <div class="card-body">
-                <h2 class="card-title">Pictures at an Exhibition</h2>
-                <p>Solo Album</p>
-                <a href="#solo" class="card-btn" onclick="showPage('solo')">info</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/discography3.jpg" alt="disco3">
-            <div class="card-body">
-                <h2 class="card-title">Sinn Yang, Violin</h2>
-                <p class="card-info">Le Grand Tango for Cello & Piano 
-                    <br>(Arr. S.Gubaiduina & Harald Oeler)</p>
-                <a target="_blank" href="https://open.spotify.com/track/1IN4tB0kw6RFMCooRCFrTB?si=ccb05c31fc3e4cc8" id="card-btn" class="card-btn">listen</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/discography4.jpg" alt="disco4">
-            <div class="card-body">
-                <h2 class="card-title">En Avril</h2>
-                <p class="card-info">Marco Böttger Quartett</p>
-                <a target="_blank" href="https://www.marcoboettger.de/cds/" id="card-btn" class="card-btn">info</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/discography5.jpg.webp" alt="disco5">
-            <div class="card-body">
-                <h2 class="card-title">Parisian Melange</h2>
-                <p class="card-info">von Hans Peter Salentin</p>
-                <a target="_blank" href="https://open.spotify.com/album/6dCfC6P2IDvmhqgAmXcEIE?si=p32xdQhxT-ay_mZrtjE3kA" id="card-btn" class="card-btn">listen</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/discography6.jpeg" alt="disco6">
-            <div class="card-body">
-                <h2 class="card-title">Al Son del Tango</h2>
-                <p class="card-info">EP von Die Vier Evangcellisten</p>
-                <a target="_blank" href="https://open.spotify.com/album/4rIVPs4byzEmpyjqtrHbnm?si=AivXlng3TdmAjQ8DD_bW3A" id="card-btn" class="card-btn">listen</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/discpgraphy7.jpg" alt="disco7">
-            <div class="card-body">
-                <h2 class="card-title">Musikalisches Kaleidoskop Hochfränkischer Künstler</h2>
-                <p class="card-info">volume 1</p>
-                <a target="_blank" href="https://www.tkv-hochfranken.de/index.php/diskografie/" id="card-btn" class="card-btn">info</a>
-            </div>
-        </div>
-        
     </div>
 </section>
-<!-- end Discographie-->
+  <!-- End projekte Section -->
 
-<!-- unterricht -->
-<section id="unterricht" class="page">
-    <h2 class="section-title">unterricht</h2>
-    <div class="projectbox">
-        <div class="col-left">
-            <img src="image/accordion.png">
-            <p>Unter seinen Schülern befinden sich zahlreiche Preisträger verschiedener Wettbewerbe, darunter vierzehn 1. Bundespreisträger bei <a href="https://www.jugend-musiziert.org" target="_blank">"Jugend musiziert"</a>, 1. Preisträger des <a href="https://www.dhv-ev.de" target="_blank">Deutschen Akkordeon Musikpreis (DAM)</a> und Preisträger des Internationalen Akkordeonfestivals in Innsbruck.</p>
-            <br>
-            <p>Neben seiner Konzert- und Lehrtätigkeit editiert Harald Oeler aktuell seine über viele entwickelte Akkordeonmethodik für Akkordeon C-Griff mit Melodiebässen, welche ab 2024 erhältlich sein wird. <a target="_blank" class="info-link" href="#vortrag-readmore"> / mehr info</a></p>
-        </div>
-        <div class="col-right"> 
-            <ul class="programm">
-                <li>
-                    <span class="bold">Dozent für Akkordeon, Theorie und Föderklasse</span> 
-                    <p>Seit September 2010 ist Harald Oeler hauptamtlicher Akkordeondozent und Leiter der Theorie- und Förderklasse an der <a target="_blank" class="info-link" href="https://www.hofer-symphoniker.de/musikschule/">Musikschule der Hofer Symphoniker</a>.</p>
-                </li>
-                <li>
-                    <span class="bold">Lehrbeauftragter</span>
-                    <p>Seit 2007 Lehrbeauftragter für Akkordeon und unterrichtrspraktisches Instrumentalspiel an der <a target="_blank" class="info-link" href="https://www.lmu.de/de/index.html">Ludwig-Maximilians-Universität München</a>. </p>
-                </li>
-                <li>
-                    <span class="bold">Gastprofessor für Akkordeon</span>
-                    <p>Im Sommer 2012 lehrte Harald Oeler als Gastprofessor an der <a target="_blank" class="info-link" href="https://en.szu.edu.cn/info/1017/1015.htm">Normal Shenzhen University</a> in China im Fach Akkordeon.</p>
-                </li>
-                <li>
-                    <span class="bold">Gastvorträge und Workshops</span>
-                    <p>Zahlreiche Workshops an Musikhochschulen darunter die <a target="_blank" href="https://www.hfm-berlin.de" class="info-link">Hochschule für Musik „Hanns Eisler“ Berlin</a> und die <a target="_blank" href="https://www.hmt-leipzig.de" class="info-link">Hochschule für Musik und Theater „Felix Mendelssohn Bartholdy“</a>.</p>
-                </li>
-            </ul>
-        </div>
+<!-- triofussissimo Section -->
+<section id="triofussissimo" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/project1.jpg" alt="img">
+      </div>
     </div>
+    <div class="col-right">
+      <h1 class="section-title">TRIO <span>FUSSISSIMO</span></h1>
+      <h2 class="bold">Gypsy-Ethno-Jazz</h2>
+      <p>Virtuose Spieltechnik und jede Menge Inspirationen aus Jazz und Weltmusik! Diese Kombination macht das Trio zu einem besonders interessanten Gypsy-Ethno-Jazz Ensemble! Seit fast 20 Jahren hat sich der Gitarrist und Komponist Rehan Syed mit seinen projekteen einen wohlklingenden Namen in der Gypsy Jazz-Szene erspielt und ist nun mit dem erstklassigen Bassisten Simon Ort am Kontrabass und dem preisgekrönten Akkordeonisten Harald Oeler in einer Trio-Besetzung zu hören, die es in sich hat! Zum Programm von „Trio Fussissimo“ gehören originelle Eigenkompositionen von Rehan Syed mit Einﬂüssen von Tango, Bossa, französischer Musette und orientalischer Musik, und Perlen aus dem Gypsy Jazz und Weltmusik Repertoire.</p>
+      <br>
+      <a href="https://www.youtube.com/embed/TsTN3AgrpbU?si=lDWTtG0d7rmXX4Ds" target="_blank">CLICK TO LISTEN</a>
+      <p>Booking : <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></p>
+    </div>
+  </div>
 </section>
-<!--end unterricht-->
 
-<!-- media-->
-<section id="media" class="page">
-    <div class="projekte-header">
-        <h2 class="section-title">media</h2>
-        <p class="info">© Kat Schulz & <a target="_blank" href="https://www.schwarzenbach-fotografie.de">Schwarzenbach Fotografie</a></p>           
+<section id="RSEnsemble" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/project2.jpeg" alt="img">
+      </div>
     </div>
-    <div class="media container">
-        <div class="swiper mySwiper">     
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="image/slide1.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="image/slide2.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="image/slide3.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="image/slide4.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="image/slide5.jpg">
-            </div>
-            <div class="swiper-button-next" style="color: #ffffff;"></div>
-            <div class="swiper-button-prev" style="color: #ffffff;"></div>
-            <div class="swiper-pagination"></div>
-            <div class="autoplay-progress">
-                <svg viewBox="0 0 48 48">
-                    <circle cx="24" cy="24" r="20"></circle>
-                </svg>
-                <span></span>
-            </div>
-        </div>
+    <div class="col-right">
+      <h1 class="section-title">Rehan Syed <span>Ensemble</span></h1>
+      <h2 class="bold">von Django bis Tango</h2>
+      <p>Das Quartett brilliert sowohl mit virtuosen Sinti Swing als auch mit originellen Eigenkompositionen von Rehan Syed und beschreitet einen eigenen Weg im Gypsy Jazz. Dabei bereichern auch Einflüsse aus Tango und orientalischer Musik das spannende und facettenreiche Programm.
+      <br>Mit Bandleader Rehan Syed an der Solo-Gitarre, Thomas Buffy an der Violine, Alex Bomba an der Rhythmus-Gitarre und Sabrina Damiani am Kontrabass, spielt das Ensemble in einer typischen Sinti Swing Besetzung in der Tradition des großen Django Reinhardt
+      <br>Die Band begeisterte zuletzt unter anderem beim „Django-Reinhardt-Festival“-Hildesheim, „Django Festival“- Burgthann, „Int. Gypsy-Jazz-Festival“ Lahr, „Bayerischen Jazzweekend“-Regensburg, „Tollwood Festival“, München, „Umsonst&Draussen“-Würzburg, „Jazzfestival Heilbronn“, „Artbreit Kunstfest“, „Erdinger Jazztage“, „Creole Bayern“, „Summer Jazz Night“-Burghausen, „St. Georgen Swingt“- Bayreuth, unzählige Kleinkunstbühnen und Clubs.</p>
+      <br>
+      <a href="https://www.youtube.com/user/rehansyedensemble" target="_blank">CLICK TO LISTEN</a>
+      <p>Booking : <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></p>
+      <a href="download/RSE Pressetext-2016.pdf" download="download/RSE Pressetext-2016.pdf" class="cta">PRESSETEXT</a>
+      <a href="download/RSE-Pressespiegel 2016.pdf" download="yourfilename.zip" class="cta">PRESSESPIEGEL</a>
     </div>
+  </div>
 </section>
- <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-const progressCircle = document.querySelector(".autoplay-progress svg");
-const progressContent = document.querySelector(".autoplay-progress span");
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  on: {
-    autoplayTimeLeft(s, time, progress) {
-      progressCircle.style.setProperty("--progress", 1 - progress);
-      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-    }
-  }
-});
-
-</script>
-<!-- end media-->
-
-<!-- termine -->
-<section id="termine" class="page" >
-    <div class="projectbox">
-        <div class="boxleft">
-            <div class="upcoming">
-                <h2 class="section-title">UPCOMING</h2>
-                <div class="info-container">
-                    <p class="info">All Posts</p>
-                    <div class="search_box">
-                        <i class="fas fa-search" id="search-icon"></i>
-                        <input type="text" placeholder="search">
-                    </div>
-                </div>
-                <div class="schedule-info-upcoming">
-                    <ul>
-                        <li class="event-item">
-                            <p class="bold">26. Januar. 2024 19:30 Uhr</p>
-                            <p class="concert">Kammerkonzert | Hot Club Swing</p>
-                            <p class="location">@ <a class="info-link" href="https://www.google.com/maps/dir//Klangmanufaktur+hof/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47a11793c3cb1f5b:0xa35592cb8b7e0c54?sa=X&ved=2ahUKEwjf2_bur-KCAxXgQvEDHZOUCYwQ9Rd6BAhAEAA" target="_blank">Klangmanufaktur</a>, Hof</p>
-                            <p class="concert-info"><a target="_blank" href="https://joscho-stephan.de">Joscho Stephan</a> Trio feat. Harald Oeler</p>
-                            <a target="_blank" class="info-link" href="https://www.hofer-symphoniker.de/konzerte-tickets/kammerkonzert-5/">mehr info | ticket</a>
-                            <div class="calendar-container">
-                                <ul>
-                                    <li>
-                                        <a class="calendar-link" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Kammerkonzert%20|%20Hot%20Club%20Swing&details=Joscho%20Stephan%20Trio%20feat.%20Harald%20Oeler&location=Klangmanufaktur,%20Hof&dates=20240126T193000Z/20240126T213000Z" target="_blank">
-                                        <i class="calendar-icon">&#128197;</i>GOOGLE CALENDER</a>
-                                    </li>
-                                    <li>    
-                                        <a class="calendar-link" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:Kammerkonzert%20|%20Hot%20Club%20Swing%0D%0ADESCRIPTION:Joscho%20Stephan%20Trio%20feat.%20Harald%20Oeler%0D%0ADTSTART:20240126T193000Z%0D%0ADTEND:20240126T213000Z%0D%0ALOCATION:Klangmanufaktur,%20Hof%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
-                                        <i class="calendar-icon">&#128197;</i> iCAL</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                         <li>
-                             <p class="bold">27. Januar. 2024 20:00 Uhr</p>
-                             <p class="concert">Gipsy Swing | Bistro Abend</p>
-                             <p class="location">@ <a class="info-link" href="https://www.seminarturnhalle.de" target="_blank">Seminarturnhalle</a>, Nagold</p>
-                             <p class="concert-info"><a target="_blank" href="https://joscho-stephan.de">Joscho Stephan</a> Trio feat. Harald Oeler</p>
-                             <a target="_blank" class="info-link" href="https://alte-seminarturnhalle.reservix.de/tickets-joscho-stephan-trio-harald-oeler-gipsy-swing-bistroabend-in-nagold-alte-seminarturnhalle-nagold-am-27-1-2024/e2147903">mehr info | ticket</a>
-                             <div class="calendar-container">
-                                <ul>
-                                    <li>
-                                        <a class="calendar-link" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Gipsy%20Swing%20|%20Bistro%20Abend&details=Joscho%20Stephan%20Trio%20feat.%20Harald%20Oeler&location=Seminarturnhalle,%20Nagold&dates=20240127T200000Z/20240127T220000Z" target="_blank">
-                                        <i class="calendar-icon">&#128197;</i>GOOGLE CALENDAR
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="calendar-link" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:Gipsy%20Swing%20|%20Bistro%20Abend%0D%0ADESCRIPTION:Joscho%20Stephan%20Trio%20feat.%20Harald%20Oeler%0D%0ADTSTART:20240127T200000Z%0D%0ADTEND:20240127T220000Z%0D%0ALOCATION:Seminarturnhalle,%20Nagold%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
-                                        <i class="calendar-icon">&#128197;</i>iCAL
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="bold">28. Januar. 2024 tba</p>
-                            <p class="concert">Gipsy Swing | Bistro Abend</p>
-                            <p class="location">@ tba, Heilbronn</p>
-                            <p class="concert-info"><a target="_blank" href="https://joscho-stephan.de">Joscho Stephan</a> Trio feat. Harald Oeler</p>
-                            <a class="info-link" href="">ticket???</a>
-                            <div class="calendar-container">
-                                <ul>
-                                    <li>
-                                        <a class="calendar-link" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Gipsy%20Swing%20|%20Bistro%20Abend&details=Joscho%20Stephan%20Trio%20feat.%20Harald%20Oeler&location=tba,%20Heilbronn&dates=20240128T000000Z/20240128T235959Z" target="_blank">
-                                        <i class="calendar-icon">&#128197;</i>GOOGLE CALENDAR
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="calendar-link" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:Gipsy%20Swing%20|%20Bistro%20Abend%20(tba)%0D%0ADESCRIPTION:Joscho%20Stephan%20Trio%20feat.%20Harald%20Oeler%0D%0ADTSTART:20240128T000000Z%0D%0ADTEND:20240128T235959Z%0D%0ALOCATION:tba,%20Heilbronn%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
-                                        <i class="calendar-icon">&#128197;</i>iCAL
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                       </li>
-                       <li>
-                            <p class="bold">11. Mai. 2024 14:00 Uhr</p>
-                            <p class="concert">Die 8 Jahreszeiten</p>
-                            <p class="location">@ <a class="info-link" href="https://www.residenz-wuerzburg.de" target="_blank">Residenz</a>, Würzburg</p>
-                            <p class="concert-info">Duo ViA! <a target="_blank" href="https://www.sinnyang.com">Sinn Yang</a> (Violine), Harald Oeler (Akordeon)</p>
-                            <div class="calendar-container">
-                                <ul>
-                                    <li>
-                                        <a class="calendar-link" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Die%208%20Jahreszeiten&details=Duo%20ViA!%20Sinn%20Yang%20(Violine),%20Harald%20Oeler%20(Akordeon)&location=Residenz,%20Würzburg&dates=20240511T140000Z/20240511T160000Z" target="_blank">
-                                            <i class="calendar-icon">&#128197;</i>GOOGLE CALENDAR
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="calendar-link" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:Die%208%20Jahreszeiten%0D%0ADESCRIPTION:Duo%20ViA!%20Sinn%20Yang%20(Violine),%20Harald%20Oeler%20(Akordeon)%0D%0ADTSTART:20240511T140000Z%0D%0ADTEND:20240511T160000Z%0D%0ALOCATION:Residenz,%20Würzburg%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
-                                            <i class="calendar-icon">&#128197;</i>iCAL
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="bold">14. Septmber. 2024 tba</p>
-                            <p class="concert"> "Warning to the rich"</p>
-                            <p class="location">@ tba, Hof</p>
-                            <p class="concert-info"><a target="_blank" href="https://kammerchor-hof.de">Kammerchor Hof</a></p>
-                            <div class="calendar-container">
-                                <ul>
-                                    <li>
-                                        <a class="calendar-link" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Warning%20to%20the%20rich&details=Kammerchor%20Hof&location=tba,%20Hof&dates=20240914T000000Z/20240914T235959Z" target="_blank">
-                                        <i class="calendar-icon">&#128197;</i>GOOGLE CALENDAR
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="calendar-link" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:Warning%20to%20the%20rich%20(tba)%0D%0ADESCRIPTION:Kammerchor%20Hof%0D%0ADTSTART:20240914T000000Z%0D%0ADTEND:20240914T235959Z%0D%0ALOCATION:tba,%20Hof%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
-                                        <i class="calendar-icon">&#128197;</i>iCAL
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="bold">15. September. 2024 tba</p>
-                            <p class="concert"> "Warning to the rich"</p>
-                            <p class="location">@ tba, Bamberg </p>
-                            <p class="concert-info"><a target="_blank" href="https://kammerchor-hof.de">Kammerchor Hof</a></p>                        
-                            <div class="calendar-container">
-                                <ul>
-                                    <li>
-                                        <a class="calendar-link" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Warning%20to%20the%20rich&details=Kammerchor%20Hof&location=tba,%20Bamberg&dates=20240915T000000Z/20240915T235959Z" target="_blank">
-                                        <i class="calendar-icon">&#128197;</i>GOOGLE CALENDAR
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="calendar-link" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:Warning%20to%20the%20rich%20(tba)%0D%0ADESCRIPTION:Kammerchor%20Hof%0D%0ADTSTART:20240915T000000Z%0D%0ADTEND:20240915T235959Z%0D%0ALOCATION:tba,%20Bamberg%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
-                                        <i class="calendar-icon">&#128197;</i>iCAL
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-        </div>
-        <div class="boxright">
-            <div id="pastevents"class="past-events">
-                <h2 class="section-title">PAST EVENTS</h2>
-                <div class="info-container">
-                    <label class="info" for="yearSelector">Select Year</label>
-                    <select id="yearSelector" onchange="showSelectedYear()">
-                        <option value="placeholder" selected hidden>Select a Year</option>
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                    </select>
-                </div>
-                <section id="year2023">
-                    <div class="schedule-info" id="past-events">
-                        <h2 class="year">2023</h2>
-                        <ul>
-                            <li>
-                                <p class="bold">12. November. 2023 18:00 Uhr</p>
-                                <p class="concert"><p class="abgesagt">ABGESAGT </p>Duo Klakk! | Double Dobbing</p>
-                                <p class="location">@ KlangManufaktur, Hof</p>
-                                <p class="concert-info">Harald Oeler (Bajan) & Ji Eun Kim (Klarinette) laden zu einem besonderen Konzerterlebnis in die KlangManufaktur in Hof ein!</p>
-                          </li>
-                            <li>
-                                <p class="bold">10. November. 2023 20:00 Uhr</p>
-                                 <p class="concert">„NEU | START | JAZZ“</p>
-                                <p class="location">@ VHS Hofer Land, Hof</p>
-                                <p class="concert-info">Konzert in der Glashalle der VHS Hofer Land in Kooperation mit dem dem <a href="https://www.dtkvbayern.de" target="_blank">Tonkünstlerverband Bayern</a> feat. <a target="_blank" href="https://christophervonmammen.de/?page_id=4279">Christopher von Mammen</a> (Saxophon), Markus Jung (Cello, Hof), Harald Oeler (Akkordeon, Hof), <a href="https://www.samueljersak.com" target="_blank">Samuel Jersak</a> (Piano, Schweiz), Peter Nitsch (Bass, Berlin) und <a href="https://julianfau.com" target="_blank">Julian Fau</a> (Drums, Nürnberg)</p>
-                            </li>
-                            <li>
-                                <p class="bold">05. November. 2023 09:30 Uhr</p>
-                                <p class="concert">Referat</p>
-                                <p class="location">@ Musikschule Kunsthalle Schirn, Frankfurt</p>
-                                <p class="concert-info">SynapsePlus – mehr als nur 5 Töne!
-                Neurologische Grundlagen und musikalische Beweglichkeit im Anfängerunterricht</p>
-                                <a target="_blank" class="info-link" href="https://dalv-online.de/wp-content/uploads/2023/08/DALV_Flyer-Symposium_RZ_23-07-24.pdf">mehr info</a>
-                            </li>
-    
-                            <button class="scroll-to-top" onclick="scrollToTop()">Up</button>
-                            <a href="#" class="archive" >archive</a>
-    
-                            <li>
-                                <p class="bold">29. Oktober. 2023 20:00 Uhr</p>
-                                <p class="concert">Trio Fussisimo</p>                       
-                                <p class="location">@ Musik Butik, Darstadt / Ochsenfurt</p>
-                                <p class="concert-info">Gypsy-Ethno-Jazz</p>
-                            </li>
-                            <li>
-                                <p class="bold">22. Oktober. 2023 15:00 Uhr</p>
-                                <p class="concert">Kinderkonzert "Fingerspiel und Wirbelwind"</p>
-                                <p class="location">@ Festsaal, Freiheitshalle, Hof</p>                        
-                                <p class="concert-info"><a target="_blank" href="https://www.hofer-symphoniker.de">Hofer Symphoniker</a></p>
-                                <a target="_blank" class="info-link" href="https://www.hofer-symphoniker.de/konzerte-tickets/kinderkonzert-2/">mehr info</a> 
-                            </li>
-                            <li>
-                                <p class="bold">07. Oktober. 2023 20:00 Uhr</p>
-                                <p class="concert">Trio Fussisimo</p>
-                                <p class="location">@ Klangmanufaktur der Hofer Symponiker, Hof</p>
-                                <p class="concert-info">Gypsy-Ethno-Jazz</p>
-                            </li>
-                            <li>                       
-                                <p class="bold">06. Oktober. 2023 20:00 Uhr</p>
-                                <p class="concert">Trio Fussisimo</p>
-                                <p class="location">@ Caleidoskop, Schweinfurt</p>
-                                <p class="concert-info">Gypsy-Ethno-Jazz</p>
-                            </li>
-                            <li>
-                                <p class="bold">05. Oktober. 2023 19:00 Uhr</p>
-                                <p class="concert">Trio Fussisimo</p>
-                                <p class="location">@ Wohnst. Hallerwiese, Nürnberg</p>
-                                <p class="concert-info">Gypsy-Ethno-Jazz</p>
-                            </li>
-                            <li>
-                                <p class="bold">30. September. 2023 19:30 Uhr</p>
-                                <p class="concert">Projects 4 Cellos – die vier Evangelisten und Gäste</p>
-                                <p class="location">@ Rosenthal Theater, Selb</p>
-                                <p class="concert-info">Release-Konzert der neuen CD zum 15 jährigen Bühnenjubiläum des Ensembles</p>
-                                <a target="_blank" class="info-link" href="https://www.tkv-hochfranken.de/index.php/2023/09/22/projects4cellos-im-rosenthal-theater-selb/">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">23. September. 2023 21:00 Uhr</p>
-                                <p class="concert">Hallersteiner Nachtkonzerte 2023</p>
-                                <p class="location">@ Evangelischen Kirchengemeinde Hallerstein, Hallerstein</p>
-                                <p class="concert-info"><a target="_blank" href="https://christophervonmammen.de">Christopher von Mammen</a> (Saxophon), Harald Oeler (Akkordeon) und Peter Nitsch (Bass) einen Kammermusikalischer Jazz-Abend</p>
-                                <a target="_blank" class="info-link" href="https://www.tkv-hochfranken.de/index.php/2023/09/22/projects4cellos-im-rosenthal-theater-selb/">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">16. September. 2023 19:00 Uhr</p>
-                                <p class="concert">DIE 8 JAHRESZEITEN</p>
-                                <p class="location">@ Christkönig Kirche Titisee, Titisee-Neustadt</p>
-                                <p class="concert-info">Vivaldi & Piazzolla / <a target="_blank" href="https://www.myvanwy.de">Myvanwy-Ella Penny</a>, Violine und Harald Oeler, Akkordeon
-                                <br>ab 18 Uhr Einführung: „Die 4 Jahreszeiten“</br>
-                                </p>
-                                <a target="_blank" class="info-link" href="https://www.regio.de/homepagebaukasten_config/userfiles/16796/uploadbilder/druck-marschner-festival-2023-plakat-a4_ohne-anschnitt.pdf">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">19. Juli. 2023 20:30 Uhr</p>
-                                <p class="concert">Rehan Syed Trio</p>
-                                <p class="location">@ Schloss, Bad Mergentheim</p>
-                                <p class="concert-info">Rehan Syed (Gitarre), Hyunbin Park (Gitarre) und Harald Oeler (Akkordeon)</p>
-                            </li>
-                            <li>
-                                <p class="bold">26. Mai. 2023 20:00 Uhr</p>
-                                <p class="concert">
-                                Das Auftaktkonzert der HofJazzNights</p>
-                                <p class="location">@ Theater Hof, Hof</p>
-                                <p class="concert-info">SWING - JAZZ - GROOVE -BOSSA - BLUES + YOUNG LIONS & HOFER MUSIKSCENE</p>
-                                <a target="_blank" class="info-link" href="https://www.hofjazznights.com/programm">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">21. Mai. 2023 11:00 Uhr</p>
-                                <p class="concert">DCZ-Jazzfrühling</p>
-                                <p class="location">@ Musikpavillon des Theresiensteins, Hof</p>
-                                <p class="concert-info">KKH-Session Group</p>
-                            </li>                    
-                            <li>
-                                <p class="bold">14. Mai. 2023 19:00 Uhr</p>
-                                <p class="concert">Duo ViA! Die 8 Jahreszeiten  - #muttertagskonzert</p>
-                                <p class="location">@ Keller Z87, Würzburg</p>
-                                <p class="concert-info">Duo ViA! <a target="_blank" href="https://www.sinnyang.com">Sinn Yang</a> (Violine), Harald Oeler (Akordeon)</p>
-                                <a target="_blank" class="info-link" href="https://z87.de/event/8-jahreszeiten-mit-duo-via-muttertagskonzert/">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">31. März. 2023 18:00 Uhr</p>
-                                <p class="concert">AkkordeonPlus Akkordeon - und Theorieklassen Harald Oeler</p>
-                                <p class="location">@ KlangManufaktur, Hof</p>
-                                <p class="concert-info">Schülerinnen und Schüler der Akkordeon- und Theorieklassen Harald Oeler spielen Werke von J.S. Bach, A. Bruckner, J.A. Andiessen, M. Moszkowski, F. Hoppert u.a.
-                                </p>
-                                <a target="_blank" class="info-link" href="https://www.hofer-symphoniker.de/konzerte-tickets/vorspiel-der-akkordeonklasse-harald-oeler/">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">18. April. 2023 19:30 Uhr</p>
-                                <p class="concert">"Die Weisse Rose"</p>
-                                <p class="location">@ Rosenthal Theater, Selb</p>
-                                <p class="concert-info">Oper von Udo Zimmermann</p>
-                                <a target="_blank" class="info-link" href="https://www.theater-hof.de/termine/detail/die-weisse-rose">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">15. April. 2023 19:30 Uhr</p>
-                                <p class="concert">"Die Weisse Rose"</p>
-                                <p class="location">@ <a class="info-link" href="https://www.theater-hof.de" target="_blank">Theater Hof</a>, Hof</p>
-                                <p class="concert-info">Oper von Udo Zimmermann</p>
-                                <a target="_blank" class="info-link" href="https://www.theater-hof.de/termine/detail/die-weisse-rose">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">02. April. 2023 19:30 Uhr</p>
-                                <p class="concert">"Die Weisse Rose"</p>
-                                <p class="location">@ <a class="info-link" href="https://www.theater-hof.de" target="_blank">Theater Hof</a>, Hof</p>
-                                <p class="concert-info">Oper von Udo Zimmermann</p>
-                                <a target="_blank" class="info-link" href="https://www.theater-hof.de/termine/detail/die-weisse-rose">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">11. März. 2023 19:30 Uhr</p>
-                                <p class="concert">"Die Weisse Rose"</p>
-                                <p class="location">@ <a class="info-link" href="https://www.theater-hof.de" target="_blank">Theater Hof</a>, Hof</p>
-                                <p class="concert-info">Oper von Udo Zimmermann</p>
-                                <a target="_blank" class="info-link" href="https://www.theater-hof.de/termine/detail/die-weisse-rose">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">04. März. 2023 19:30 Uhr</p>
-                                <p class="concert">"Die Weisse Rose"</p>
-                                <p class="location">@ <a class="info-link" href="https://www.theater-hof.de" target="_blank">Theater Hof</a>, Hof</p>
-                                <p class="concert-info">Oper von Udo Zimmermann</p>
-                                <a target="_blank" class="info-link" href="https://www.theater-hof.de/termine/detail/die-weisse-rose">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">25. Februar. 2023 19:30 Uhr</p>
-                                <p class="concert">PREMIERE "Die Weisse Rose"</p>
-                                <p class="location">@ <a class="info-link" href="https://www.theater-hof.de" target="_blank">Theater Hof</a>, Hof</p>
-                                <p class="concert-info">Oper von Udo Zimmermann</p>
-                                <a target="_blank" class="info-link" href="https://www.theater-hof.de/termine/detail/die-weisse-rose">mehr info</a>
-                            </li>
-                        </ul>   
-                    </div>
-                </section>
-                <section id="year2022">
-                    <div class="schedule-info2022" id="past-events">
-                        <h2 class="year">2022</h2>
-                        <ul>
-                            <button class="scroll-to-top" onclick="scrollToTop()">Up</button>
-                            <li>
-                                <p class="bold">08. June. 2022 19:30 Uhr</p>
-                                <p class="concert">Tango-Operita von Astor Piazzolla "MARÍA DE BUENOS AIRES"</p>
-                                <p class="location">@ Kurtheater Bad Kissingen</p>
-                                <a class="info-link" target="_blank" href="https://www.operabase.com/productions/maria-de-buenos-aires-145250/de">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">11. März. 2022 20:00 Uhr</p>
-                                <p class="concert">Joscho Stephan Trio</p>
-                                <p class="location">@ Kulturhammer e.V., Thierstein</p>
-                                <p class="concert-info"><a target="_blank" href="https://joscho-stephan.de">Joscho Stephan</a> Trio feat. Harald Oeler</p>
-                                <a target="_blank" class="info-link" href="https://www.kulturhammer.de/veranstaltung/joscho-stephan-trio-mit-harald-oeler/">mehr info</a> 
-                           </li>
-                            <li>
-                                <p class="bold">16. Februar. 2022 19:30 Uhr</p>
-                                <p class="concert">Tango-Operita von Astor Piazzolla "MARÍA DE BUENOS AIRES"</p>
-                                <p class="location">@ Rosenthal-Theater,Selb</p>
-                                <p class="concert-info">weitere Auftritte : 16./ 17./ 19./ 20. Februar. 2023 / 18. März. 2023
-                                </p>
-                                <a target="_blank" class="info-link" href="https://www.operabase.com/productions/maria-de-buenos-aires-145250/de">mehr info</a>
-                            </li>
-                            <li>
-                                <p class="bold">28. Januar. 2022 19:30 Uhr</p>
-                                <p class="concert">PREMIERE Tango-Operita von Astor Piazzolla "MARÍA DE BUENOS AIRES"</p>
-                                <p class="location">@ Theater Hof, Hof</p>
-                                <p class="concert-info">weitere Auftritte: 29. Januar. 2023</p>
-                                <a target="_blank" class="info-link" href="https://www.theater-hof.de/ballett/detail/maría-de-buenos-aires">mehr info</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>    
-            </div>
-        </div>
+<section id="syedpark" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/project3.jpeg" alt="img">
+      </div>
     </div>
+    <div class="col-right">
+      <h1 class="section-title">DUO <span>SYED & PARK</span></h1>
+      <h2 class="bold">Akustik Jazz & Gypsy mit 2 Gitarren </h2>
+      <p>Das Gitarren-Duo besticht mit zwei Virtuosen auf höchstem Niveau!
+      <br>Sowohl Rehan Syed als auch Hyun-Bin Park sind Meister ihres Fachs und fühlen sich im traditionellen Jazz, im Gypsy Jazz als auch im Latin Jazz zu Hause.
+      <br>Eine Duo Besetzung bietet immer große Freiheiten für die Musiker ihr ganzes Können und Improvisationskunst einzubringen. Die daraus entstehende Spielfreude und Spontanität der beiden Künstler ist ein Vergnügen für das Publikum.</p>
+      <br>
+      <a href="https://www.youtube.com/user/rehansyedensemble" target="_blank">CLICK TO LISTEN</a>
+      <p>Booking : <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></p>
+    </div>
+  </div>
 </section>
-<!--termine END-->
 
+<section id="milonga" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/project4.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title"><span>Milonga Dunja</span></h1>
+      <h2 class="bold">Jazz und Folklore - Paris und Karachi - Piazzolla und Django!</h2>
+      <p>„Milonga Dunja“ ist ein energiegeladenes und vor Virtuosität sprühendes Quartett welches Elemente des Jazz, orientalische Musik und Tango vereint.
+      <br>Das frisch formierte Ensemble bietet unter anderem spannende Kompositionen von Rehan Syed welche meisterhaft von seinen Bandmitgliedern <a href="https://www.asafsirkis.com" target="_blank">Asaf Sirkis</a> (Drums), Harald Oeler (Accordeon) und Felix Himmler (Bass) interpretiert werden. Zum Repertoire gehören außerdem Stücke von Astor Piazzolla, Richard Galliano und Django Reinhardt.</p>
+      <br>
+      <a href="https://www.youtube.com/user/rehansyedensemble" target="_blank">CLICK TO LISTEN</a>
+      <p>Booking : <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="project5" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/project5.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">"Django" <span>eine Geschichte mit Bildern und Musik</span></h1>
+      <h2 class="bold">nach dem Kinderbuch von Frans Haaken</h2>
+      <p>Die erfolgreiche Aufführung in Form von Bildern, Erzählungen und Musik über das Leben von Django Reinhardt.
+      <br>Ein Kinderbuch von Frans Haaken diente hierfür als Vorlage. 
+      <br>Die Musik wird live gespielt vom "Winterstein Sintett" und Rehan Syed.
+      Das ca. 60 Minuten lange Programm ist für die ganze Familie geeignet.
+      <br>
+      <br>Regie und Lesung: Wolfgang Salomon 
+      <br>Musikalische Leitung: Rehan Syed</p>
+      <br>
+      <a href="https://www.youtube.com/watch?v=HMVdwvqW1Q0" target="_blank">CLICK TO LISTEN</a>
+      <p>Booking : <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="project6" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/project6.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">Musik für <span>besondere Anlässe</span></h1>
+      <h2 class="bold">Rehan Syed Solo Guitar </h2>
+      <p>Solostücke von Pop bis Jazz und spontane Improvisationen.
+      <br>Das Soloprogramm eignet sich besonders gut für Lesungen und als anspruchsvolle Bereicherung zu besonderen Anlässen.</p>
+      <br>
+      <h2 class="bold">Swing Nova Trio</h2>
+      <p>Swing Klassiker, Tango, französische Walzer, Gypsy Swing, Chanson.
+      <br>Das Swing Nova Trio ist die ideale Band für Hochzeiten, Firmenfeiern, Weinproben oder auch Tanzveranstaltungen mit einer ausgewogenen Mischung aus niveauvoller und mitreißender Musik.
+      <br>Rehan Syed bietet mit diesem Trio ein Programm welches auch für gehobene Veranstaltungen geeignet ist und begeistert sowohl mit virtuoser Instrumentalmusik als auch wunderschönen Gesangsstücken!
+      <br>Die Hauptbesetzung ist ein Trio mit zwei Gitarren und Kontrabass.   
+      <br>Für besonders kleine Veranstaltungen ist auch eine Duo Besetzung möglich. </p>
+      <br>
+      <h2 class="bold">Traditionelle Musik der Sintis</h2>
+      <p>Alte und neue Lieder der Sintis mit dem "Winterstein Sintett"!
+      <br>Die sechs bis acht köpfige Band bringt Leben in große Feiern!</p>
+      <br>
+      <h2 class="bold">"Les Danses du monde"</h2>
+      <p>Tänze aus aller Welt, von französischer Musette über Swing bis Tango.
+      <br>Wunderschön interpretiert vom Rehan Syed Ensemble!</p>
+      <br>
+      <a href="https://soundcloud.com/rehan-syed-ensemble/les-danses-du-monde-tanzmusik" target="_blank">CLICK TO LISTEN</a>
+      <p>Booking : <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="CD" class="page">
+  <div class="CD container">
+    <div class="CD-header">
+      <h1 class="section-title"><span>CD</span> Erscheinungen </h1>
+    </div>
+  <div class="projectbox">
+      <div class="box">
+          <img class="CD1" src="image/cd1.jpg" alt="cd 1">
+          <div class="card-body">
+              <h2 class="card-title">Rehan Syed Ensemble</h2>
+              <p>"Fussissimo"</p>
+              <a href="#CD1" class="card-btn" onclick="showPage('CD1')">info</a>
+          </div>
+      </div>
+      <div class="box">
+          <img class="CD2" src="image/cd2.jpeg" alt="cd 2">
+          <div class="card-body">
+              <h2 class="card-title">Rehan Syed Ensemble</h2>
+              <p class="card-info">"Merci a Django"</p>
+              <a href="#CD2" class="card-btn" onclick="showPage('CD2')">info</a>
+          </div>
+      </div>
+      <div class="box">
+          <img class="CD3" src="image/cd3.jpeg" alt="cd 3">
+          <div class="card-body">
+              <h2 class="card-title">Winterstein Sintett & Rehan Syed</h2>
+              <p>Mug De Djal</p>
+              <a href="#CD3" class="card-btn" onclick="showPage('CD3')">info</a>
+          </div>
+      </div>
+      <div class="box">
+          <img class="CD4" src="image/cd4.jpeg" alt="cd 4">
+          <div class="card-body">
+              <h2 class="card-title">Rehan Syed Ensemble</h2>
+              <p class="card-info">Tanzmusikprogramm - "Les Danses du monde"</p>
+              <a href="#CD4" class="card-btn" onclick="showPage('CD4')">info</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="CD1" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/cd1.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">Rehan Syed <span>Ensemble</span></h1>
+      <h2 class="bold">"Fussissimo"  03/2014</h2>
+      <p>Das Ensemble beschreitet auf seinem zweiten Album “Fussissimo“ neue Wege. Zwar sind das Flair und die Melancholie des Sinti Swing noch unverkennbar in den Eigenkompositionen Syeds präsent, doch zeigt der Virtuose mit deutsch - pakistanischen Wurzeln hier zusammen mit seinen hochgradig versierten Bandkollegen (Thomas Buffy - Viol., Alex Bomba - Git., Simon Ort - Bass) aufregende neue Facetten seiner Kunst: Mitreißende Rhythmen, halsbrecherische Solofahrten und Melodien, die einem noch lange nach dem Konzert im Ohr klingen. Die Musik ist bildhaft und voller Phantasie, sie entführt an magische Orte, von Paris über Lateinamerika bis in den Orient.</p>
+      <br>
+      <p>Produziert vom Rehan Syed Ensemble 2014</p>
+      <p>Aufnahme, Mix, Mastering: Thomas Buffy @ <a href="https://thomas-buffy.jimdosite.com" target="_blank">Dsongi Productions</a></p>
+      <p>Photos: Hagen Platzdasch, Artwork: Beate Zierhut</p>
+      <p>Label/Vertrieb: Schlachthaus Records LC 01139</p>
+      <br>
+      <p>Hinweis:</p>
+      <p>Druckfehler bei Track 14:</p>
+      <p>Rythme Futur – Django Reinhardt</p>
+      <p>(Arrangement Rehan Syed)</p>
+      <ul class="cd_ul">
+        <li>
+          <p>Erhältlich bei: </p>
+          <p><a href="https://musik-butik.de" target="_blank">Butik Würzburg</a></p>
+          <p><a href="https://gypsyguitar.de" target="_blank">Gypsy Guitar</a></p>
+          <p><a href="https://www.amazon.de" target="_blank">Amazon</a></p>
+          <p><a href="https://www.apple.com/itunes/" target="_blank">iTunes</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="CD2" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/cd2.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">Rehan Syed <span>Ensemble</span></h1>
+      <h2 class="bold">"Merci à Django" , 2012</h2>
+      <p>Mit der CD "Merci à Django" widmet sich das Rehan Syed Ensemble in einer traditionellen Quartett Besetzung dem musikalischen Erbe von Django Reinhardt, dem Vater des Gypsy Jazz.Eine gelungene Hommage an den Meister!</p>
+      <br>
+      <p>Produziert vom Rehan Syed Ensemble 2012</p>
+      <p>Aufnahme, Mix, Mastering: Thomas Buffy @ <a href="https://thomas-buffy.jimdosite.com" target="_blank">Dsongi Productions</a></p>
+      <p>Photos: Hagen Platzdasch, Artwork: Beate Zierhut</p>
+      <p>Label/Vertrieb: Schlachthaus Records LC 01139</p>
+      <br>
+      <ul class="cd_ul">
+        <li>
+          <p>Erhältlich bei: </p>
+          <p><a href="https://gypsyguitar.de" target="_blank">Gypsy Guitar</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="CD1" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/cd1.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">Rehan Syed <span>Ensemble</span></h1>
+      <h2 class="bold">"Fussissimo"  03/2014</h2>
+      <p>Das Ensemble beschreitet auf seinem zweiten Album “Fussissimo“ neue Wege. Zwar sind das Flair und die Melancholie des Sinti Swing noch unverkennbar in den Eigenkompositionen Syeds präsent, doch zeigt der Virtuose mit deutsch - pakistanischen Wurzeln hier zusammen mit seinen hochgradig versierten Bandkollegen (Thomas Buffy - Viol., Alex Bomba - Git., Simon Ort - Bass) aufregende neue Facetten seiner Kunst: Mitreißende Rhythmen, halsbrecherische Solofahrten und Melodien, die einem noch lange nach dem Konzert im Ohr klingen. Die Musik ist bildhaft und voller Phantasie, sie entführt an magische Orte, von Paris über Lateinamerika bis in den Orient.</p>
+      <br>
+      <p>Produziert vom Rehan Syed Ensemble 2014</p>
+      <p>Aufnahme, Mix, Mastering: Thomas Buffy @ <a href="https://thomas-buffy.jimdosite.com" target="_blank">Dsongi Productions</a></p>
+      <p>Photos: Hagen Platzdasch, Artwork: Beate Zierhut</p>
+      <p>Label/Vertrieb: Schlachthaus Records LC 01139</p>
+      <br>
+      <p>Hinweis:</p>
+      <p>Druckfehler bei Track 14:</p>
+      <p>Rythme Futur – Django Reinhardt</p>
+      <p>(Arrangement Rehan Syed)</p>
+      <ul class="cd_ul">
+        <li>
+          <p>Erhältlich bei: </p>
+          <p><a href="https://musik-butik.de" target="_blank">Butik Würzburg</a></p>
+          <p><a href="https://gypsyguitar.de" target="_blank">Gypsy Guitar</a></p>
+          <p><a href="https://www.amazon.de" target="_blank">Amazon</a></p>
+          <p><a href="https://www.apple.com/itunes/" target="_blank">iTunes</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="CD3" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/cd2.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title"><span>Winterstein Sintett</span> & Rehan Syed</h1>
+      <h2 class="bold">"Mug De Djal" 2014</h2>
+      <p>Ein lebendiger Mix aus Gypsy Swing und traditionellen Liedern der Sintis!</p>
+      <br>
+      <p>Besetzung:
+ 
+        <br>Rehan Syed - Solo Git. / Voc.
+        <br>Dino Winterstein - Git. / Voc.
+        <br>Nucki Winterstein - Git. / Voc.
+        <br>Dito Winterstein - Git. / Voc.
+        <br>Sancho Dombrowsky - Git.
+        <br>Laurent Flandin - Bass / Voc.
+        <br> 
+        <br>Special Guests:
+        <br> 
+        <br>Jamira Windgassen - Voc.
+        <br>Lateefah Windgassen - Voc.
+        <br>Thomas Buffy - Violin
+      </p>
+      <br>
+      <p>Winterstein Sintett und Rehan Syed 2014</p>
+      <p>Aufnahme, Mix, Mastering: Thomas Buffy @ <a href="https://thomas-buffy.jimdosite.com" target="_blank">Dsongi Productions</a></p>
+      <p>Photos: Michael Pietschmann</p>
+      <p>Label/Vertrieb: Schlachthaus Records LC 01139</p>
+      <br>
+      <ul class="cd_ul">
+        <li>
+          <p>Erhältlich bei: </p>
+          <p><a href="https://musik-butik.de" target="_blank">Butik Würzburg</a></p>
+          <p><a href="https://gypsyguitar.de" target="_blank">Gypsy Guitar</a></p>
+          <p><a href="https://www.amazon.de" target="_blank">Amazon</a></p>
+          <p><a href="https://www.apple.com/itunes/" target="_blank">iTunes</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="CD4" class="custom-section page">
+  <div class="bio container">
+    <div class="col-left">
+      <div class="bio-img">
+        <img src="image/cd1.jpeg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">Rehan Syed <span>Ensemble</span></h1>
+      <h2 class="bold">"Les danses du monde"  2013</h2>
+      <p>Unsere Tanzmusik-Demo CD: 
+      <br>Das Rehan Syed Ensemble präsentiert Standardtänze der Welt.</p>
+      <br>
+      <p>Produziert vom Rehan Syed Ensemble 2013</p>
+      <p>Aufnahme, Mix, Mastering: Thomas Buffy @ <a href="https://thomas-buffy.jimdosite.com" target="_blank">Dsongi Productions</a></p>
+      <p>Photos: Hagen Platzdasch, Artwork: Beate Zierhut</p>
+      <p>Label/Vertrieb: Schlachthaus Records LC 01139</p>
+      <br>
+      <ul class="cd_ul">
+        <li>
+          <p>Erhältlich auf Anfrage unter <a href="mailto:info@rehansyed.de">info@rehansyed.de</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- bio Section -->
+  <section id="bio" class="page">
+    <div class="bio container">
+      <div class="col-left">
+        <div class="bio-img">
+          <img src="image/rehan.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">über <span>mich</span></h1>
+        <h2 class="bold">MUSIKER UND KOMPONIST</h2>
+        <p>Rehan Syed, 1971 in München geboren, kommt aus einer deutsch - pakistanischen Familie. Als Kind wuchs er sowohl mit der indischen und arabischen Musik seines Vaters, als auch mit vielen Eindrücken aus der klassischen Musik durch seine Mutter auf. Schon im Alter von 8 Jahren wollte Rehan Syed beim Musikunterricht eigene Lieder schreiben, seine Leidenschaft und sein Talent für die Musik wurde offensichtlich. Es folgte eine lange Reise durch viele Musikstile mit verschiedenen Instrumenten bis er schließlich mit der Gitarre sein Instrument fand. Die ersten Jahre beim Erlernen des Gitarrenspiels waren eher autodidaktisch, später mit verschiedenen Lehrern. Mit dem ersten Lehrer für Jazz öffneten sich neue Möglichkeiten für ein übergreifendes Verständnis für Musik, Komposition und Improvisation. </p>
+        <a href="path/to/your/file.zip" download="yourfilename.zip" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End bio Section -->
+
+
+<!-- tour -->
+<section id="tour" class="page">
+  <div class="tour container">
+    <div class="col-right">
+      <h1 class="section-title"><span>TOUR</span></h1>
+      <h1 class="bold">2023</h1>
+      <ul>
+        <li>
+          <p><span class="bold">08.10.2023 20:00 Uhr</span> FUSSISSIMO | Darstadt / Ochsenfurt, Musik Butik</p>
+        </li>
+        <li>
+          <p><span class="bold">08.10.2023 20:00 Uhr</span> FUSSISSIMO | Darstadt / Ochsenfurt, Musik Butik</p>
+        </li>
+        <li>
+          <p><span class="bold">07.10.2023 20:00 Uhr</span> FUSSISSIMO | Hof, Klangmanufaktur der Hofer Symphoniker</p>
+        </li>
+        <li>
+          <p><span class="bold">06.10.2023 20:00 Uhr</span> FUSSISSIMO | Schweinfurt, Caleidoskop</p>
+        </li>
+        <li>
+          <p><span class="bold">05.10.2023 20:00 Uhr</span> FUSSISSIMO | Nürnberg, Wohnst. Hallerwiese</p>
+        </li>
+        <li>
+          <p><span class="bold">03.08.2023 20:00 Uhr</span> Syed & Hofman Duo | Würzburg, Theater am Neunerplatz</p>
+        </li>
+        <li>
+          <p><span class="bold">30.07.2023 15:00 Uhr</span> Syed & Park Duo | Wertheim, Schlösschen im Hofgarten</p>
+        </li>
+        <li>
+          <p><span class="bold">19.07.2023 20:30 Uhr</span> Rehan Syed Trio | Bad Mergentheim, Schloss</p>
+        </li>
+        <li>
+          <p><span class="bold">15.07.2023 16:00 Uhr</span> Rehan Syed Trio | Igersheim, Sommerfest</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--TOUR END-->
+<section id="download" class="page">
+  <div class="container">
+    <div class="left">
+      <h1 class="section-title">Songs von Rehan Syed <span>Download</span></h1>
+      <h2>Für alle Musiker die Interesse haben Kompositionen von Rehan Syed zu spielen gibt es hier einige Noten und Akkorde als download!</h2>
+    </div>
+    <ul>
+      <p class="bold">Fussissimo</p>
+      <li>
+        <p><a href="download/Fussissimo Noten.pdf" download="download/Fussissimo Noten.pdf">NOTEN</a></p>
+        <p><a href="download/Fussissimo - Akkorde.pdf" download="download/Fussissimo - Akkorde.pdf">AKKORDE</a></p>
+        <p><a href="download/Fussissimo_Tabs.pdf" download="download/Fussissimo_Tabs.pdf">TABS</a></p>
+      </li>
+      <p class="bold">Sholah</p>
+      <li>
+        <p>NOTEN</p>
+        <p>AKKORDE</p>
+        <p>TABS</p>
+      </li>
+      <p class="bold">Tango Gatto</p>
+      <li>
+        <p>NOTEN</p>
+        <p>AKKORDE</p>
+        <p>TABS</p>
+      </li>
+      <p class="bold">Pariacci</p>
+      <li>
+        <p>NOTEN</p>
+        <p>AKKORDE</p>
+        <p>TABS</p>
+      </li>
+      <p class="bold">Valse 07</p>
+      <li>
+        <p>NOTEN</p>
+        <p>AKKORDE</p>
+        <p>TABS</p>
+      </li>
+      <p class="bold">Mia's Dance</p>
+      <li>
+        <p>NOTEN</p>
+        <p>AKKORDE</p>
+        <p>TABS</p>
+      </li>
+    </ul>
+  </div>
+  
+</section>
 
   <!-- kontakt Section -->
-  <section id="kontakt" class="page">
-    <h2 class="section-title">kontakt</h2>
-    <div class="projectbox">
+  <section id="kontakt" class="custom-section page">
+    <div class="kontakt container">
+      <div class="bio container">
         <div class="col-left">
-            <img src="/image/contact-profile.png" alt="Your Image" class="circular-image">
+          <div class="bio-img">
+            <img src="image/rehan.jpg" alt="img">
+          </div>
+          <p class="copyright">© Kat Schulz</p>
         </div>
-        <div class="col-right"> 
-            <h2 class="contact-name">HARALD OELER</h2>
-            <p><i class="fa-regular fa-envelope"></i> 
-                <a href="mailto:harald.oeler@gmx.de">harald.oeler@gmx.de</a></p>
-            <p><i class="fa-solid fa-phone"></i> +49 176 70004842</p>
-            <p><i class="fa-solid fa-house"></i> Hof, Deutschland</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/harald.oeler" target="_blank"><i class="fab fa-facebook-f"></i></a></li>     
-                <li><a href="https://www.instagram.com/haraldoeler/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
-                <li><a href="https://www.youtube.com/@HO-yg4ur/videos" target="_blank"><i class="fa-brands fa-youtube"></i></i></a></li>
-                <li><a href="https://de.linkedin.com/in/harald-oeler-8794ab40" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://open.spotify.com/artist/1Oe30Bgo655dNTk0OEqmIA?si=LIB75TGVRfeaCtZJyJBd0Q" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
-            </ul>
-            <div class="footer">
-                <p><a href="#impressum" onclick="showPage('impressum')">IMPRESSUM |<a href="#privacypolicy" onclick="showPage('privacypolicy')"> PRIVACY POLICY</a></p>
-            </div>
-            <div class="copyright">
-                <p>copyright © 2024 Harald Oeler designed by Kimi</p>
-            </div>
+        <div class="col-right">
+          <h1 class="section-title"><span>KONTAKT </span>INFO</h1>
+          <p class="bold">Booking und Künstler-Kontakt :</p>
+          <br>
+          <p><i class="fa-solid fa-user"></i> Rehan Syed</p>
+          <p><i class="fa-solid fa-phone"></i> +49/ (0)177/6007095</p>
+          <p><i class="fa-solid fa-house"></i>
+            Hartmannstraße 19  
+            97082 Würzburg</p>
+          <p><i class="fa-regular fa-envelope"></i><a href="mailto:info@rehansyed.de"> info@rehansyed.de</a></p>
+          <form action="https://formspree.io/f/mknlldvb" method="POST">      
+            <label>
+                <input type="name" name="name" placeholder="Name" >
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="E-Mail Adresse" required>
+            </label>
+            <label>
+                <textarea name="nachricht" required rows="3" placeholder="Nachricht"></textarea>
+            </label>
+            <button type="submit">Senden</button>
+
+        </form>
         </div>
+      </div>
     </div>
-</section>
-<section id="impressum" class="page">
-<a href="#kontakt" onclick="showPage('kontakt'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
+    <div id="footer">
+      <p><a href="#disclaimer" onclick="showPage('disclaimer')" data-after="disclaimer">DISCLAIMER </a> | <a href="https://www.facebook.com/rehan.syed.906" target="_blank">FACEBOOK </a> | <a href="https://www.youtube.com/user/rehansyedensemble" target="_blank">YOUTUBE</a></p>
+      <p>copyright © 2024 Rehan Syed designed by Kimi</p>
+    </div>
+  </section>
+  <section id="disclaimer" class="page">
+    <div class="container">
+        <h1 class="section-title"><span>DISCLAIMER</span></h1>
+        <h2>Haftung für Inhalte</h2>
+        <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+      <h2>Haftung für Links</h2>
+      <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+      <h2>Urheberrecht</h2>
+      <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+  </section>
 
-<h2 class="section-title">impressum</h2>
-<div class="info">
-</div>
-</section>
-<section id="privacypolicy" class="page">
-<a href="#kontakt" onclick="showPage('kontakt'); return false;" class="back"><i class="fa-solid fa-circle-chevron-left"></i> BACK</a>
-<h2 class="section-title">Datenschutzerklärung3</h2>
-<div class="info">
-    <br> 
-    <h3>Allgemeine Hinweise</h3>
-    <br> 
-    <p>Diese Datenschutzerklärung enthält ausführliche Informationen darüber, was mit Ihren persönlichen Daten passiert, wenn Sie unsere Website www.haraldoeler.com besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie sich persönlich identifizieren können. Wir halten uns bei der Verarbeitung Ihrer Daten streng an die gesetzlichen Bestimmungen, insbesondere die Datenschutzgrundverordnung („DSGVO“), und legen großen Wert darauf, dass Ihr Besuch auf unserer Website absolut sicher ist.</p>
-    <br> 
-<h3>Verantwortliche Stelle</h3>
-<br> 
-<p>Datenschutzrechtlich verantwortlich für die Erhebung und Verarbeitung von personenbezogenen Daten auf dieser Website ist:</p>
-<br> 
-<p>Vorname, Name: Harald, Oeler
-    <br>Straße, Hausnummer: Am Otterberg 13 Postleitzahl, Ort: 95032, Hof
-    <br>Land: Deutschland
-    <br>E-Mail: harald.oeler@gmx.de
-    <br>Tel.: 0176 70004842</p>
-<br> 
-<h3>§1</h3>
-<h3>Webanalyse Tools und Werbung</h3>
-<br> 
-<h3>1.1 Google Ads und Google Conversion-Tracking</h3>
-<br> 
-
-<p>Unsere Website verwendet Google Ads (vormals Google AdWords). Google Ads ist ein Online- Werbeprogramm der Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland („Google“).
-</p>
-<br>Unsere Website verwendet Google Ads (vormals Google AdWords). Google Ads ist ein Online- Werbeprogramm der Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland („Google“).
-<br> 
-<br>Google Ads ermöglicht uns, mit Hilfe von Werbemitteln auf externen Webseiten auf unsere Angebote aufmerksam zu machen und zu ermitteln, wie erfolgreich einzelne Werbemaßnahmen sind. Dies hilft uns, Ihnen Werbung anzuzeigen, die für Sie von Interesse ist, unsere Website für Sie interessanter zu gestalten und eine faire Berechnung von Werbekosten zu erreichen.
-<br> 
-<br>Im Rahmen von Google Ads nutzen wir das sogenannte Conversion-Tracking. Die Werbemittel werden durch Google über sogenannte „AdServer“ ausgeliefert. Hierfür verwenden wir sogenannte AdServer-Cookies, durch die bestimmte Parameter zur Erfolgsmessung, wie Einblendung der Anzeigen oder Klicks durch die Nutzer, gemessen werden können. Wenn Sie auf eine von Google geschaltete Anzeige klicken, wird ein Cookie für das Conversion-Tracking gesetzt. Bei Cookies handelt es sich um kleine Textdateien, die der Internet-Browser auf dem Computer des Nutzers ablegt. Diese Cookies verlieren nach 30 Tagen ihre Gültigkeit und dienen nicht der persönlichen Identifizierung der Nutzer. Diese Cookies ermöglichen Google eine Wiedererkennung Ihres Webbrowsers. Besuchen Sie bestimmte Seiten unseres Webauftritts, wenn das Cookie noch nicht abgelaufen ist, können Google und wir erkennen, dass Sie auf die konkrete Anzeige geklickt haben und zu dieser Seite weitergeleitet wurden.
-<br> 
-<br>Jeder Google Ads-Kunde erhält ein anderes Cookie. Die Cookies können somit nicht über die Websites von Ads-Kunden nachverfolgt werden. Zum Cookie werden in der Regel als Analysewerte folgende Informationen gespeichert: Unique-Cookie-ID, Anzahl Ad Impressions pro Platzierung (Frequency), letzte Impression (relevant für Post-View-Conversions), Opt-out- Informationen (Markierung, dass der Nutzer nicht mehr angesprochen werden möchte). Die mithilfe des Conversion-Cookies eingeholten Informationen dienen dazu, Conversion-Statistiken für Ads-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben. Die Ads- Kunden erfahren die Gesamtanzahl der Nutzer, die auf ihre Anzeige geklickt haben und zu einer mit einem Conversion-Tracking-Tag versehenen Seite weitergeleitet wurden. Sie erhalten jedoch keine Informationen, mit denen sich Nutzer persönlich identifizieren lassen. Wenn Sie nicht am Tracking teilnehmen möchten, können Sie dieser Nutzung widersprechen, indem Sie das Cookie des Google Conversion-Trackings über ihren Internet-Browser unter Nutzereinstellungen leicht deaktivieren. Sie werden sodann nicht in die Conversion-Tracking Statistiken aufgenommen.
-<br> 
-<br>Die Zusammenfassung der erfassten Daten in Ihrem Google-Konto erfolgt ausschließlich auf Grundlage Ihrer Einwilligung, die Sie bei Google abgeben oder widerrufen können (Art. 6 Abs. 1 lit. a DSGVO). Bei Datenerfassungsvorgängen, die nicht in Ihrem Google-Konto zusammengeführt werden (z.B., weil Sie kein Google-Konto haben oder der Zusammenführung widersprochen haben), beruht die Erfassung der Daten auf Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse ergibt sich daraus, dass wir ein Interesse an der anonymisierten Analyse der Besucher unserer Website zu Werbezwecken haben, um sowohl unser Webangebot als auch unsere Werbung zu optimieren.
-<br> 
-<br>Weitergehende Informationen und die Datenschutzbestimmungen finden Sie in der Datenschutzerklärung von Google unter: https://policies.google.com/technologies/ads?hl=de. 
-<br> 
-<br> 
-<h3>Soziale Medien</h3>
-<br> 
-
-<h3>1.1 Facebook-Plugins (Like & Share-Button)</h3>
-<br> 
-
-<p>Auf unserer Website sind Plugins des sozialen Netzwerks Facebook, Anbieter Facebook Inc., 1 Hacker Way, Menlo Park, California 94025, USA, integriert („Facebook“). Die Facebook Plugins erkennen Sie an dem Facebook-Logo oder dem „Like-Button“ („Gefällt mir“) auf unserer Website. Eine Übersicht über die Facebook Plugins finden Sie hier: https://developers.facebook.com/docs/plugins/?locale=de_DE.
-<br> Um den Schutz Ihrer Daten beim Besuch unserer Website zu erhöhen, sind die Facebook- Plugins nicht uneingeschränkt, sondern lediglich unter Verwendung eines HTML-Links (sogenannte „Shariff“-Lösung von c‘t) in die Seite eingebunden. Diese Einbindung gewährleistet, dass beim Aufruf einer Seite unseres Webauftritts, die solche Plugins enthält, noch keine Verbindung mit den Servern von Facebook hergestellt wird. Erst wenn Sie auf den Facebook Button klicken, öffnet sich ein neues Fenster Ihres Browsers und ruft die Seite von Facebook auf, auf der Sie den Like- oder Share-Button betätigen können.
-<br>Informationen über den Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch Facebook sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in der Datenschutzerklärung von Facebook unter: https://de-de.facebook.com/privacy/explanation.
-<br> 
-<br> 
-<h3>1.2 Instagram Plugin </h3>
-<br> 
-
-<p>Auf unseren Seiten sind Funktionen des Dienstes Instagram eingebunden. Diese Funktionen werden durch die Instagram Inc., 1601 Willow Road, Menlo Park, CA 94025, USA, („Instagram“) angeboten. Die Plugins sind mit einem Instagram-Logo beispielsweise in Form einer „Instagram-Kamera“ gekennzeichnet. Eine Übersicht über die Instagram Plugins und deren Aussehen finden Sie hier: http://blog.instagram.com/post/36222022872/introducing-instagram- badges
-    <br>Um den Schutz Ihrer Daten beim Besuch unserer Website zu erhöhen, sind die Instagram- Plugins nicht uneingeschränkt, sondern lediglich unter Verwendung eines HTML-Links (sogenannte „Shariff“-Lösung von c‘t) in die Seite eingebunden. Diese Einbindung gewährleistet, dass beim Aufruf einer Seite unseres Webauftritts, die solche Plugins enthält, noch keine Verbindung mit den Servern von Instagram hergestellt wird. Erst wenn Sie auf den Instagram Button klicken, öffnet sich ein neues Fenster Ihres Browsers und ruft die Seite von Instagram auf.
-    <br>Informationen über den Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch Instagram sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in der Datenschutzerklärung von Instagram unter: https://instagram.com/about/legal/privacy/.</p>
-    <br> 
-    <br> 
-    <h3>1.3 LinkedIn Plugin</h3>
-    <br> 
-
-    <p>Unsere Website benutzt Funktionen des Netzwerks LinkedIn. Anbieter ist die LinkedIn Corporation, 2029 Stierlin Court, Mountain View, CA 94043, USA („LinkedIn“).
-    </p>
-    <br>Um den Schutz Ihrer Daten beim Besuch unserer Website zu erhöhen, sind die LinkedIn- Plugins nicht uneingeschränkt, sondern lediglich unter Verwendung eines HTML-Links (sogenannte „Shariff“-Lösung von c‘t) in die Seite eingebunden. Diese Einbindung gewährleistet, dass beim Aufruf einer Seite unseres Webauftritts, die solche Plugins enthält, noch keine Verbindung mit den Servern von LinkedIn hergestellt wird. Erst wenn Sie auf den LinkedIn Button klicken, öffnet sich ein neues Fenster Ihres Browsers und ruft die Seite von LinkedIn auf.
-    <br>Informationen über den Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch LinkedIn sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in der Datenschutzerklärung von LinkedIn unter: https://www.linkedin.com/legal/privacy-policy.
-    <br> 
-    <br> 
-    <h3>1.4 YouTube Plugin</h3>
-    <br> 
-
-    <p>Für Integration und Darstellung von Videoinhalten benutzt unsere Website Plugins von YouTube. Anbieter des Videoportals ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA („YouTube“).</p>
-    <br>Um den Schutz Ihrer Daten beim Besuch unserer Website zu erhöhen, sind die YouTube- Plugins nicht uneingeschränkt, sondern lediglich unter Verwendung eines HTML-Links (sogenannte „Shariff“-Lösung von c‘t) in die Seite eingebunden. Diese Einbindung gewährleistet, dass beim Aufruf einer Seite unseres Webauftritts, die solche Plugins enthält, noch keine Verbindung mit den Servern von YouTube hergestellt wird. Erst wenn Sie auf den YouTube Button klicken, öffnet sich ein neues Fenster Ihres Browsers und ruft die Seite von YouTube auf, auf der Sie den Like-Button betätigen können.
-    <br>Informationen über den Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch YouTube sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in der Datenschutzerklärung von YouTube unter: https://www.google.de/intl/de/policies/privacy.
-    <br> 
-    <br> 
-    <h3>Kontaktformular</h3>
-    <br> 
-    <p>Sofern Sie mit uns Kontakt per E-Mail oder über ein Kontaktformular aufnehmen, werden übermittelte Daten einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt.</p>
-    <br>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
-    <br>Über das Kontaktformular übermittelte Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht. Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.
-    <br> 
-    <br> 
-    <h3>Datenverwendung und -weitergabe</h3>
-    <br> 
-    <p>Die personenbezogenen Daten, die Sie uns z.B. per E-Mail mitteilen (z.B. Ihr Name und Ihre Adresse oder Ihre E-Mail-Adresse), werden wir weder an Dritte verkaufen noch anderweitig vermarkten. Ihre personenbezogenen Daten werden nur zur Korrespondenz mit Ihnen und nur für den Zweck verarbeitet, zu dem Sie uns die Daten zur Verfügung gestellt haben. Zur Abwicklung von Zahlungen geben wir Ihre Zahlungsdaten an das mit der Zahlung beauftragte Kreditinstitut weiter.</p>
-    <br>Die Verwendung von Daten, die bei Ihrem Besuch unserer Website automatisch erhoben werden, erfolgt nur zu den vorstehend genannten Zwecken. Eine anderweitige Verwendung der Daten findet nicht statt.
-    <br>Wir versichern, dass wir Ihre personenbezogenen Daten im Übrigen nicht an Dritte weitergeben, es sei denn, dass wir dazu gesetzlich verpflichtet wären oder Sie uns vorher Ihre Zustimmung gegeben haben.
-    <br> 
-    <br> 
-    <h3>SSL- bzw. TLS-Verschlüsselung</h3>
-    <br> 
-    <p>Unsere Website benutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://” auf „https://” wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
-    <br>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
-    <br> 
-    <br> 
-    <h3>§2</h3>
-    <h3>Speicherdauer</h3> 
-    <br> 
-        <p>Personenbezogene Daten, die uns über unsere Website mitgeteilt worden sind, werden nur so lange gespeichert, bis der Zweck erfüllt ist, zu dem sie uns anvertraut wurden. Soweit handels- und steuerrechtliche Aufbewahrungsfristen zu beachten sind, kann die Speicherdauer zu bestimmten Daten bis zu 10 Jahre betragen.</p>
-        <br> 
-        <br> 
-    <h3>§3 Betroffenenrechte</h3>
-    <br> 
-    <p>Hinsichtlich der Sie betreffenden personenbezogenen Daten haben als Betroffener der Datenverarbeitung nach Maßgabe der gesetzlichen Bestimmungen folgende Rechte gegenüber dem Verantwortlichen:</p>
-    <br> 
-    <br> 
-        <h3>3.1 Widerrufsrecht</h3>
-        <br> 
-    <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sofern die Verarbeitung Ihrer Daten auf Ihrer Einwilligung beruht, haben Sie das Recht, eine einmal erteilte Einwilligung in die Verarbeitung von Daten gemäß Art. 7 Abs. 3 DSGVO jederzeit mit Wirkung für die Zukunft zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt. Speicherung der Daten für Abrechnungs- und buchhalterische Zwecke bleibt von einem Widerruf nicht berührt.</p>
-    <br> 
-    <br> 
-        <h3>3.2 Auskunftsrecht</h3>
-        <br> 
-    <p>
-        Sie haben das Recht, gemäß Art. 15 DSGVO von uns eine Bestätigung darüber zu verlangen, ob wir personenbezogene Daten verarbeiten, die Sie betreffen. Liegt eine solche Verarbeitung vor, haben Sie das Recht auf Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten, die Verarbeitungszwecke, die Kategorien der verarbeiteten personenbezogenen Daten, die Empfänger oder Kategorien von Empfängern, gegenüber denen Ihre Daten offengelegt wurden oder werden, die geplante Speicherdauer bzw. die Kriterien für die Festlegung der Speicherdauer, das Bestehen eines Rechts auf Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung, Beschwerde bei einer Aufsichtsbehörde, die Herkunft Ihrer Daten, wenn diese nicht durch uns bei Ihnen erhoben wurden, das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling und ggf. aussagekräftige Informationen über die involvierte Logik und die Sie betreffende Tragweite und die angestrebten Auswirkungen einer solchen Verarbeitung, sowie Ihr Recht auf Unterrichtung, welche Garantien gemäß Art. 46 DSGVO bei Weiterleitung Ihrer Daten in Drittländer bestehen.
-        <br> 
-        <br> 
-        <h3>3.3 Recht auf Berichtigung</h3>
-        <br> 
-        <p>Sie haben das Recht, gemäß Art. 16 DSGVO jederzeit unverzügliche Berichtigung Sie betreffender unrichtiger personenbezogener Daten und/oder die Vervollständigung Ihrer unvollständigen Daten zu verlangen.</p>
-        <br> 
-        <br> 
-        <h3>3.4 Recht auf Löschung</h3>
-        <br> 
-        <p>Sie haben das Recht, gemäß Art. 17 DSGVO die Löschung Ihrer personenbezogenen Daten zu verlangen, sofern einer der folgenden Gründe zutrifft:</p>
-        <br>a) Ihre personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig.
-        <br>b) Sie widerrufen Ihre Einwilligung, auf die sich die Verarbeitung gemäß Art. 6 Abs. 1 lit. a oder Art. 9 Abs. 2 lit. a DSGVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.
-        <br>c) Sie legen gemäß Art. 21 Abs. 1 DSGVO Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder Sie legen gemäß Art. 21 Abs. 2 DSGVO Widerspruch gegen die Verarbeitung ein.
-        <br>d) Die personenbezogenen Daten wurden unrechtmäßig verarbeitet.
-        <br>e) Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht des Mitgliedstaates erforderlich, dem wir unterliegen.
-        <br>f) Die personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DSGVO erhoben.
-Verpflichtung nach dem Unionsrecht oder dem Recht des Mitgliedstaates erforderlich, dem wir unterliegen.
-        <br>Dieses Recht besteht jedoch nicht, soweit die Verarbeitung erforderlich ist:
-        <br>a) zur Ausübung des Rechts auf freie Meinungsäußerung und Information;
-        <br>b) zur Erfüllung einer rechtlichen Verpflichtung, die die Verarbeitung nach dem Recht der Union oder des Mitgliedstaates, dem wir unterliegen, erfordert, oder zur Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die uns übertragen wurde;
-        <br>c) aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit gemäß Art. 9 Abs. 2 lit. h und i sowie Art. 9 Abs. 3 DSGVO;
-        <br>d) für im öffentlichen Interesse liegende Archivzwecke, wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gemäß Art. 89 Abs. 1 DSGVO, soweit das Betroffenenrecht voraussichtlich die Verwirklichung der Ziele dieser Verarbeitung unmöglich macht oder ernsthaft beeinträchtigt, oder
-        <br>e) zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
-        <br>Haben wir Ihre personenbezogenen Daten öffentlich gemacht und sind wir nach Vorstehendem zu deren Löschung verpflichtet, so treffen wir unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene Maßnahmen, auch technischer Art, um für die Datenverarbeitung Verantwortliche, die die personenbezogenen Daten verarbeiten, darüber zu informieren, dass Sie als betroffene Person von ihnen die Löschung aller Links zu Ihren personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt haben.
-        <br> 
-        <br> 
-        <h3>3.5 Recht auf Einschränkung der Verarbeitung</h3>
-        <br> 
-        <br> Sie haben das Recht, gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung (Sperrung) Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:
-        <br> a) Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
-        <br> b) Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah / geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.
-        <br> c) Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
-        <br> d) Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
-        <br> Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.
-        
-        <br> 
-        <br>  
-        <h3>3.6 Recht auf Unterrichtung</h3>
-        <br> 
-        <br> Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung gegenüber uns geltend gemacht, sind wir verpflichtet, allen Empfängern, denen Ihre personenbezogenen Daten offengelegt wurden, diese Berichtigung oder Löschung der Daten oder Einschränkung der Verarbeitung mitzuteilen, es sei denn, dies erweist sich als unmöglich oder ist mit einem unverhältnismäßigen Aufwand verbunden. Ihnen steht gemäß Art. 19 DSGVO das Recht zu, nach Verlangen über diese Empfänger unterrichtet zu werden.
-        <br> 
-        <br>  
-        <h3>3.7 Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden</h3>
-        <br> 
-        <br>  Sie haben das Recht, gemäß Art. 22 DSGVO nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt.
-        <br>  Dies gilt nicht, wenn die Entscheidung
-        <br> a) für den Abschluss oder die Erfüllung eines Vertrags zwischen Ihnen und uns erforderlich ist,
-        <br>b) aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche unterliegt, zulässig ist und diese Rechtsvorschriften angemessene Maßnahmen zur Wahrung Ihrer Rechte und Freiheiten sowie Ihrer berechtigten Interessen enthalten oder
-        <br>c) mit Ihrer ausdrücklichen Einwilligung erfolgt.
-Allerdings dürfen die Entscheidungen in den in (a) bis (c) genannten Fällen nicht auf besonderen Kategorien personenbezogener Daten nach Art. 9 Abs. 1 DSGVO beruhen, sofern nicht Art. 9 Abs. 2 lit. a oder lit. g gilt und angemessene Maßnahmen zum Schutz der Rechte und Freiheiten sowie Ihrer berechtigten Interessen getroffen wurden.
-<br> 
-<br>In den in (a) und (c) genannten Fällen treffen wir angemessene Maßnahmen, um Ihre Rechte und Freiheiten sowie Ihre berechtigten Interessen zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.
-<br> 
-<br> 
-<h3>3.8 Recht auf Datenübertragbarkeit</h3>
-<br> 
-<br> Sofern die Verarbeitung auf Ihrer Einwilligung gem. Art. 6 Abs. 1 lit. a DSGVO oder Art. 9 Abs. 2 lit. a DSGVO oder auf einem Vertrag gemäß Art. 6 Abs. 1 lit. b DSGVO beruht und mithilfe automatisierter Verfahren erfolgt, haben Sie das Recht, gemäß Art. 20 DSGVO Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesebaren Format zu erhalten und einem anderen Verantwortlichen zu übermitteln oder die Übermittlung an einen anderen Verantwortlichen zu verlangen, soweit dies technisch machbar ist.
-<br>  
-<h3>3.9 Widerspruchsrecht</h3>
-<br> 
-<br> Soweit wir die Verarbeitung Ihrer personenbezogenen Daten auf die Interessenabwägung nach Art. 6 Abs. 1 lit. f DSGVO stützen, haben Sie jederzeit das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling. Die jeweilige Rechtsgrundlage, auf der eine Verarbeitung beruht, entnehmen Sie dieser Datenschutzerklärung. Wenn Sie Widerspruch einlegen, werden wir Ihre betroffenen personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen (Widerspruch nach Art. 21 Abs. 1 DSGVO).
-<br> Werden Ihre personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, so haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung Sie betreffender personenbezogener Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Wenn Sie widersprechen, werden Ihre personenbezogenen Daten anschließend nicht mehr zum Zwecke der Direktwerbung verwendet (Widerspruch nach Art. 21 Abs. 2 DSGVO).
-Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft – ungeachtet der Richtlinie 2002/58/EG - Ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.
-<br> 3.10 Beschwerderecht bei der zuständigen Aufsichtsbehörde gemäß Art. 77 DSGVO
-Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
-<br> 
-<br> 
-Bayerisches Landesamt für Datenschutzaufsicht
-<br> Promenade 18 91522 Ansbach
-<br> Postanschrift:
-<br> Postfach 1349, 91504 Ansbach
-<br> Telefon: 0981/180093-0
-<br> E-Mail: poststelle@lda.bayern.de Internet: https://www.lda.bayern.de
-<br> Gültigkeit und Änderung dieser Datenschutzerklärung
-<br> 
-<br> 
-Diese Datenschutzerklärung gilt ab dem 1. Januar 2024. Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit unter Beachtung der geltenden Datenschutzvorschriften zu ändern. Dies kann z.B. zur Einhaltung neuer Gesetzesbestimmungen oder zur Berücksichtigung der Änderungen unserer Website bzw. neuer Dienstleistungen auf unserer Website erforderlich sein. Es gilt die zum Zeitpunkt Ihres Besuchs abrufbare Fassung.
-<br> 
-<br> Sollte diese Datenschutzerklärung geändert werden, beabsichtigen wir, Änderungen an unserer Datenschutzerklärung auf dieser Seite bekannt zu geben, sodass Sie umfassend darüber informiert sind, welche personenbezogene Daten wir sammeln, wie wir sie verarbeiten und unter welchen Umständen sie weitergegeben werden können.
-</div>
-</section>
+  <script src="./app.js"></script>
 </body>
-</html>
 
+</html>
